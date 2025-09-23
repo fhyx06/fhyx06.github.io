@@ -32,11 +32,11 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
 
 
+  <!-- APlayer CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aplayer/dist/APlayer.min.css">
+  
 <meta name="generator" content="Hexo 7.3.0"></head>
-<!-- APlayer CSS -->
-<link rel="stylesheet" href="https://unpkg.com/aplayer/dist/APlayer.min.css">
-<!-- APlayer JS -->
-<script src="https://unpkg.com/aplayer/dist/APlayer.min.js"></script>
+
 
 <body>
   <div id="container">
@@ -146,46 +146,47 @@
 <div class="widget music-player">
   <h3 class="widget-title">音乐播放</h3>
   <div id="aplayer"></div>
-
   <script>
-    const ap = new APlayer({
-      container: document.getElementById('aplayer'),
-      fixed: false,       // false 表示嵌入侧边栏
-      mini: false,        // 小模式
-      autoplay: false,    // 自动播放，可改为 true
-      theme: '#1e90ff',   // 播放器主色
-      loop: 'all',        // 循环模式: 'all', 'one', 'none'
-      order: 'list',      // 播放顺序
-      preload: 'auto',
-      volume: 0.7,
-      listFolded: false,   // 默认折叠歌单
-      audio: [
-        {
-          name: '天知河',
-          artist: '说说Crystal',
-          url: '/music/tzh.mp3',
-          cover: '/music/cover.jpg',
-          lrc: '/music/tzh.lrc'
-        },
-        {
-          name: '不凡',
-          artist: '王铮亮',
-          url: '/music/不凡 - 王铮亮.flac',
-          cover: '/music/cover.jpg',
-          lrc: '/music/不凡 - 王铮亮.lrc'
-        },
-        {
-          name: '少年不凡',
-          artist: '刘美麟',
-          url: '/music/少年不凡 - 刘美麟.flac',
-          cover: '/music/cover.jpg',
-          lrc: '/music/少年不凡 - 刘美麟.lrc'
-        },
- 
-      ]
+    document.addEventListener("DOMContentLoaded", function() {
+      const ap = new APlayer({
+        container: document.getElementById('aplayer'),
+        fixed: false,       // false 表示嵌入侧边栏
+        mini: false,        // 小模式
+        autoplay: false,    // 自动播放，可改为 true
+        theme: '#1e90ff',   // 播放器主色
+        loop: 'all',        // 循环模式: 'all', 'one', 'none'
+        order: 'list',      // 播放顺序
+        preload: 'auto',
+        volume: 0.7,
+        listFolded: false,   // 默认折叠歌单
+        audio: [
+          {
+            name: '天知河',
+            artist: '说说Crystal',
+            url: '/music/tzh.mp3',
+            cover: '/music/cover.jpg',
+            lrc: '/music/tzh.lrc'
+          },
+          {
+            name: '不凡',
+            artist: '王铮亮',
+            url: '/music/不凡 - 王铮亮.flac',
+            cover: '/music/cover.jpg',
+            lrc: '/music/不凡 - 王铮亮.lrc'
+          },
+          {
+            name: '少年不凡',
+            artist: '刘美麟',
+            url: '/music/少年不凡 - 刘美麟.flac',
+            cover: '/music/cover.jpg',
+            lrc: '/music/少年不凡 - 刘美麟.lrc'
+          },
+        ]
+      });
     });
   </script>
 </div>
+
 
   
     
@@ -264,6 +265,8 @@
       Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
+  <!-- APlayer JS -->
+  <script src="https://unpkg.com/aplayer/dist/APlayer.min.js"></script>
 </footer>
 
     </div>
