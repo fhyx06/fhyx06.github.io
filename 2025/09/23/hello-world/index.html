@@ -35,7 +35,12 @@
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
 
+
 <meta name="generator" content="Hexo 7.3.0"></head>
+<!-- APlayer CSS -->
+<link rel="stylesheet" href="https://unpkg.com/aplayer/dist/APlayer.min.css">
+<!-- APlayer JS -->
+<script src="https://unpkg.com/aplayer/dist/APlayer.min.js"></script>
 
 <body>
   <div id="container">
@@ -57,9 +62,11 @@
       <nav id="main-nav">
         <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
         
-          <a class="main-nav-link" href="/">Home</a>
+          <a class="main-nav-link" href="/">首页</a>
         
-          <a class="main-nav-link" href="/archives">Archives</a>
+          <a class="main-nav-link" href="/archives">档案</a>
+        
+          <a class="main-nav-link" target="_blank" rel="noopener" href="http://fhyx06.cn/">渗色世界</a>
         
       </nav>
       <nav id="sub-nav">
@@ -120,7 +127,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/09/23/hello-world/" data-id="cmfvwg2my0004vwsoap51d04y" data-title="Hello World" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://example.com/2025/09/23/hello-world/" data-id="cmfw1q3ut000buwso2e35cj4c" data-title="Hello World" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -130,10 +137,19 @@
     
 <nav id="article-nav">
   
+    <a href="/2025/09/23/Hexo/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          Hexo
+        
+      </div>
+    </a>
   
-    <a href="/2025/09/22/Hexo/" id="article-nav-older" class="article-nav-link-wrap">
+  
+    <a href="/2025/09/22/Scrcpy_new/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">后一篇</strong>
-      <div class="article-nav-title">Hexo</div>
+      <div class="article-nav-title">Scrcpy</div>
     </a>
   
 </nav>
@@ -146,13 +162,82 @@
         
           <aside id="sidebar">
   
-    
+    <!-- 侧边栏 APlayer 播放器 widget -->
+<div class="widget music-player">
+  <h3 class="widget-title">音乐播放</h3>
+  <div id="aplayer"></div>
+
+  <script>
+    const ap = new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: false,       // false 表示嵌入侧边栏
+      mini: false,        // 小模式
+      autoplay: false,    // 自动播放，可改为 true
+      theme: '#1e90ff',   // 播放器主色
+      loop: 'all',        // 循环模式: 'all', 'one', 'none'
+      order: 'list',      // 播放顺序
+      preload: 'auto',
+      volume: 0.7,
+      listFolded: false,   // 默认折叠歌单
+      audio: [
+        {
+          name: '天知河',
+          artist: '说说Crystal',
+          url: '/music/天知河 - 说说Crystal.flac',
+          cover: '/music/cover.jpg',
+          lrc: '/music/天知河 - 说说Crystal.lrc'
+        },
+        {
+          name: '不凡',
+          artist: '王铮亮',
+          url: '/music/不凡 - 王铮亮.flac',
+          cover: '/music/cover.jpg',
+          lrc: '/music/不凡 - 王铮亮.lrc'
+        },
+        {
+          name: '少年不凡',
+          artist: '刘美麟',
+          url: '/music/少年不凡 - 刘美麟.flac',
+          cover: '/music/cover.jpg',
+          lrc: '/music/少年不凡 - 刘美麟.lrc'
+        },
+ 
+      ]
+    });
+  </script>
+</div>
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2025/09/23/Hexo/">Hexo</a>
+          </li>
+        
+          <li>
+            <a href="/2025/09/23/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2025/09/22/Scrcpy_new/">Scrcpy</a>
+          </li>
+        
+          <li>
+            <a href="/2025/09/22/about/">雪境·慢行</a>
+          </li>
+        
+          <li>
+            <a href="/2025/09/22/Typora1.9.5/">Typora1.9.5</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
 
-  
-    
   
     
   <div class="widget-wrap">
@@ -165,37 +250,29 @@
 
   
     
+
+  
+    
   <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
+    <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2025/09/23/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2025/09/22/Hexo/">Hexo</a>
-          </li>
-        
-          <li>
-            <a href="/2025/09/22/Typora1.9.5/">Typora1.9.5</a>
-          </li>
-        
-          <li>
-            <a href="/2025/09/22/Scrcpy_new/">Scrcpy</a>
-          </li>
-        
-          <li>
-            <a href="/2025/09/22/about/">关于本页面</a>
-          </li>
-        
-      </ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AMD/" rel="tag">AMD</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%83%A8%E7%BD%B2Hexo/" rel="tag">部署Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9B%AA%E5%A2%83%C2%B7%E6%85%A2%E8%A1%8C/" rel="tag">雪境·慢行</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/AMD/" style="font-size: 10px;">AMD</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 20px;">工具</a> <a href="/tags/%E9%83%A8%E7%BD%B2Hexo/" style="font-size: 10px;">部署Hexo</a> <a href="/tags/%E9%9B%AA%E5%A2%83%C2%B7%E6%85%A2%E8%A1%8C/" style="font-size: 10px;">雪境·慢行</a>
     </div>
   </div>
 
   
 </aside>
+
         
       </div>
       <footer id="footer">
@@ -212,9 +289,11 @@
     </div>
     <nav id="mobile-nav">
   
-    <a href="/" class="mobile-nav-link">Home</a>
+    <a href="/" class="mobile-nav-link">首页</a>
   
-    <a href="/archives" class="mobile-nav-link">Archives</a>
+    <a href="/archives" class="mobile-nav-link">档案</a>
+  
+    <a target="_blank" rel="noopener" href="http://fhyx06.cn/" class="mobile-nav-link">渗色世界</a>
   
 </nav>
     
