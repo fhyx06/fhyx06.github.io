@@ -2017,7 +2017,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1758808261662),
+    lastupdate: new Date(1758812772494),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2511,14 +2511,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         笔记在本地搭建 Hexo：
 
 确保本地安装了 Node.js 和 Git 
-123node -v  # 查看node版本npm -v  # 查看包管理工具版本git -v
+12345node -v  # 查看node版本npm -v  # 查看包管理工具版本git -vnpm install -g hexo-cli  # 安装 Hexo
 
-运行 npm install -g hexo-cli 安装 Hexo。
-
-在一个空文件夹里运行 hexo init my-blog 来初始化一个 Hexo 项目。
-
-cd my-blog 然后 npm install。
-...
+在一个空文件夹里运行 
+1234hexo init my-blog    # 初始化一个 Hexo 项目 （my-blog为项目名，自行修改）cd ...
       
     
   </div>
@@ -2555,7 +2551,7 @@ cd my-blog 然后 npm install。
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2025/09/24/显示测试/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2025/09/25/Ubuntu/">
   <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
     <meta itemprop="name" content="渗色世界">
   </span>
@@ -2573,31 +2569,24 @@ cd my-blog 然后 npm install。
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/09/24/%E6%98%BE%E7%A4%BA%E6%B5%8B%E8%AF%95/"  itemprop="url">
-        显示测试
+      <a href="/2025/09/25/Ubuntu/"  itemprop="url">
+        Ubuntu部分
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        一级标题二级标题三级标题四级标题五级标题六级标题列表
-无序列表桀桀桀桀桀桀桀桀桀
-无序列表桀桀桀桀桀桀桀桀桀
-无序列表桀桀桀桀桀桀桀桀桀
+        Ubuntu 部署准备工作
+一台Ubuntu服务器
 
+初始化
+更新系统软件包（也许不需要）
+12345# 更新软件包列表sudo apt update# 升级所有已安装的软件包sudo apt upgrade -y
 
-有序列表桀桀桀桀桀桀桀桀桀
-有序列表桀桀桀桀桀桀桀桀桀
-有序列表桀桀桀桀桀桀桀桀桀
-
-引用
-引用部分
-会须一饮三百杯
-莫听穿林打叶声，何妨吟啸且徐行
-
-超链接超链接
-代码块123456789101112131415# Python代码块T =&quot...
+安装宝塔
+正式版：11.1.0
+1if [ -f /usr/bin/curl ];then curl -sSO https://download.bt.cn/install/i...
       
     
   </div>
@@ -2605,20 +2594,20 @@ cd my-blog 然后 npm install。
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2025-09-24T19:40:00+08:00">2025-09-24</time>
+        <time itemprop="dateCreated datePublished" datetime="2025-09-25T22:31:15+08:00">2025-09-25</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="/categories/Test/">Test</a>
+          <a class="category-link" href="/categories/%E8%AE%B0%E5%BD%95/">记录</a>
           
             <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/Test/" itemprop="url"><span itemprop="name">Test</span></a>
+              <a href="/categories/%E8%AE%B0%E5%BD%95/" itemprop="url"><span itemprop="name">记录</span></a>
             </span>
           
         
       </div>
       
         <div>
-          <a class='readmore' href='/2025/09/24/%E6%98%BE%E7%A4%BA%E6%B5%8B%E8%AF%95/' itemprop="url">
+          <a class='readmore' href='/2025/09/25/Ubuntu/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2709,7 +2698,7 @@ Node.js 推荐版本为：Node 18~20
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2025/09/23/hello-world/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2025/09/24/显示测试/">
   <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
     <meta itemprop="name" content="渗色世界">
   </span>
@@ -2727,16 +2716,31 @@ Node.js 推荐版本为：Node 18~20
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/09/23/hello-world/"  itemprop="url">
-        Hello World
+      <a href="/2025/09/24/%E6%98%BE%E7%A4%BA%E6%B5%8B%E8%AF%95/"  itemprop="url">
+        显示测试
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
+        一级标题二级标题三级标题四级标题五级标题六级标题列表
+无序列表桀桀桀桀桀桀桀桀桀
+无序列表桀桀桀桀桀桀桀桀桀
+无序列表桀桀桀桀桀桀桀桀桀
+
+
+有序列表桀桀桀桀桀桀桀桀桀
+有序列表桀桀桀桀桀桀桀桀桀
+有序列表桀桀桀桀桀桀桀桀桀
+
+引用
+引用部分
+会须一饮三百杯
+莫听穿林打叶声，何妨吟啸且徐行
+
+超链接超链接
+代码块123456789101112131415# Python代码块T =&quot...
       
     
   </div>
@@ -2744,7 +2748,7 @@ Qu...
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2025-09-23T08:25:15+08:00">2025-09-23</time>
+        <time itemprop="dateCreated datePublished" datetime="2025-09-24T19:40:00+08:00">2025-09-24</time>
         
           <span class="dot"></span>
           <a class="category-link" href="/categories/Test/">Test</a>
@@ -2757,7 +2761,7 @@ Qu...
       </div>
       
         <div>
-          <a class='readmore' href='/2025/09/23/hello-world/' itemprop="url">
+          <a class='readmore' href='/2025/09/24/%E6%98%BE%E7%A4%BA%E6%B5%8B%E8%AF%95/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -3155,7 +3159,7 @@ gfx1201（AMD Radeon RX 9070 XT;AMD Radeon RX 9070）
           <li><a class="flat-box"
             title="/categories/Test/" href="/categories/Test/"
             active-action="action-categoriesTest"
-            ><div class='name'>Test</div><div class='badge'>(2)</div></a></li>
+            ><div class='name'>Test</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E5%B7%A5%E5%85%B7/" href="/categories/%E5%B7%A5%E5%85%B7/"
@@ -3165,7 +3169,7 @@ gfx1201（AMD Radeon RX 9070 XT;AMD Radeon RX 9070）
           <li><a class="flat-box"
             title="/categories/%E8%AE%B0%E5%BD%95/" href="/categories/%E8%AE%B0%E5%BD%95/"
             active-action="action-categoriesE8AEB0E5BD95"
-            ><div class='name'>记录</div><div class='badge'>(3)</div></a></li>
+            ><div class='name'>记录</div><div class='badge'>(4)</div></a></li>
         
       </ul>
     </div>
@@ -3190,7 +3194,7 @@ gfx1201（AMD Radeon RX 9070 XT;AMD Radeon RX 9070）
 
 
     <div class='content'>
-      <a href="/tags/AMD/" style="font-size: 14px; color: #999">AMD</a> <a href="/tags/Scrcpy/" style="font-size: 14px; color: #999">Scrcpy</a> <a href="/tags/markdown/" style="font-size: 14px; color: #999">markdown</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 14px; color: #999">测试</a> <a href="/tags/%E8%AF%84%E8%AE%BA/" style="font-size: 14px; color: #999">评论</a> <a href="/tags/%E9%83%A8%E7%BD%B2Hexo/" style="font-size: 14px; color: #999">部署Hexo</a> <a href="/tags/%E9%9B%AA%E5%A2%83%C2%B7%E6%85%A2%E8%A1%8C/" style="font-size: 14px; color: #999">雪境·慢行</a>
+      <a href="/tags/AMD/" style="font-size: 14px; color: #999">AMD</a> <a href="/tags/Scrcpy/" style="font-size: 14px; color: #999">Scrcpy</a> <a href="/tags/markdown/" style="font-size: 14px; color: #999">markdown</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 14px; color: #999">测试</a> <a href="/tags/%E8%AF%84%E8%AE%BA/" style="font-size: 14px; color: #999">评论</a> <a href="/tags/%E9%83%A8%E7%BD%B2/" style="font-size: 14px; color: #999">部署</a> <a href="/tags/%E9%83%A8%E7%BD%B2Hexo/" style="font-size: 14px; color: #999">部署Hexo</a> <a href="/tags/%E9%9B%AA%E5%A2%83%C2%B7%E6%85%A2%E8%A1%8C/" style="font-size: 14px; color: #999">雪境·慢行</a>
     </div>
   </section>
 
@@ -3262,7 +3266,7 @@ gfx1201（AMD Radeon RX 9070 XT;AMD Radeon RX 9070）
 
 
   <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2025/09/25/Artalk/"><div class="item"><time>2025-09-25</time><span>记录</span></div><span>Artalk</span></a></li><li><a class="widget-last" href="/2025/09/23/Hexo/"><div class="item"><time>2025-09-25</time><span>记录</span></div><span>Hexo</span></a></li><li><a class="widget-last" href="/2025/09/24/%E6%98%BE%E7%A4%BA%E6%B5%8B%E8%AF%95/"><div class="item"><time>2025-09-25</time><span>Test</span></div><span>显示测试</span></a></li><li><a class="widget-last" href="/2025/09/22/about/"><div class="item"><time>2025-09-24</time><span>记录</span></div><span>雪境·慢行</span></a></li><li><a class="widget-last" href="/2025/09/23/hello-world/"><div class="item"><time>2025-09-24</time><span>Test</span></div><span>Hello World</span></a></li></ul>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2025/09/23/Hexo/"><div class="item"><time>2025-09-25</time><span>记录</span></div><span>Hexo</span></a></li><li><a class="widget-last" href="/2025/09/22/Scrcpy_new/"><div class="item"><time>2025-09-25</time><span>工具</span></div><span>Scrcpy</span></a></li><li><a class="widget-last" href="/2025/09/25/Ubuntu/"><div class="item"><time>2025-09-25</time><span>记录</span></div><span>Ubuntu部分</span></a></li><li><a class="widget-last" href="/2025/09/25/Artalk/"><div class="item"><time>2025-09-25</time><span>记录</span></div><span>Artalk</span></a></li><li><a class="widget-last" href="/2025/09/24/%E6%98%BE%E7%A4%BA%E6%B5%8B%E8%AF%95/"><div class="item"><time>2025-09-25</time><span>Test</span></div><span>显示测试</span></a></li></ul>
   </div>
 </section>
 
