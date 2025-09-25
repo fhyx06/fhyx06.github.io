@@ -230,6 +230,14 @@ button {
     backdrop-filter: saturate(200%) blur(20px);
   }
 }
+@supports (backdrop-filter: blur(20px)) {
+  .blur#comments {
+    backdrop-filter: unset;
+  }
+}
+#layoutHelper-comments {
+  margin-bottom: 100px;
+}
 .shadow {
   box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
   -webkit-box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
@@ -2012,7 +2020,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1758777730005),
+    lastupdate: new Date(1758798666873),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2020,7 +2028,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       fancybox_js: 'https://unpkg.com/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.umd.js'
     },
     sidebar: {
-      for_page: ["blogger","category","tagcloud","donate"],
+      for_page: ["blogger","music","category","tagcloud","donate","webinfo","lastupdate","feedback","qrcode"],
       for_post: ["toc"],
       webinfo: {
         lastupd: {
@@ -2028,7 +2036,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           friendlyShow: true
         },
         runtime: {
-          data: "2020/01/01",
+          data: "2025/9/20",
           unit: "天"
         }
       }
@@ -2400,8 +2408,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
             
 <div class='new-meta-item author' itemprop="author" itemscope itemtype="https://schema.org.cn/Person">
-  <a itemprop="url" class='author' href="/" rel="nofollow">
-    <img itemprop="image" src="/images/icon/favicon-16.ico" class="lazyload" data-srcset="/images/icon/favicon-16.ico" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+  <a itemprop="url" class='author' href="about/" rel="nofollow">
+    <img itemprop="image" src="/images/icon/favicon-32.ico" class="lazyload" data-srcset="/images/icon/favicon-32.ico" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
     <p itemprop="name">η</p>
   </a>
 </div>
@@ -2441,6 +2449,20 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
             
 
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span id="artalk_visitors" data-page-key="/2025/09/24/%E6%98%BE%E7%A4%BA%E6%B5%8B%E8%AF%95/">
+        <i class="fa-light fa-loader fa-spin fa-fw" aria-hidden="true"></i>
+      </span>
+        
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
 
 
           
@@ -2618,7 +2640,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class='hoverbox'>
           <a class='share'><img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/wechat.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
           <div class='target'>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATgAAAE4CAAAAADqFLC2AAADrElEQVR42u3bwVbCQAwFUP7/p3Wvh9PJS6gB7+wQWmZuXTyT+PiyovVAAA4cOHAWOHBL4B7h+nn9ry948vmrz6X3S+9TPi84cODAgQMHDtwyuOMAGEKkD6L6fVf77Z4XHDhw4MCBAwduK9zUwU4PXH3dBWqfFxw4cODAgQMH7kPgpn7ehawWTsGBAwcOHDhw4MD1Am71oGkjGhw4cODAgQMH7tPhpkCqG37VfqoP4rZOPjhw4MCBAwcO3BDcqwYBt76OzwsOHDhw4MCBA7cEbnqdQp8OCqaFx9PCZvl84MCBAwcOHDhwS+DSQmC1wVw9aLfBXC2sHt8PHDhw4MCBAwduKVwaVLsbbQ/8hfstN8zBgQMHDhw4cOCWwU0d4DTYdhvE1aBehY8HC8GBAwcOHDhw4G6Gmwq+U5BTg4OnBdCxhjQ4cODAgQMHDtxNcOnAYNrAThve04OJcYETHDhw4MCBAwfuTeCmGsJ3Xd9tgB83pMGBAwcOHDhw4JbCTRckq4XE6vtTBdjLc4EDBw4cOHDgwC2BSwPn1KoeNH1/LECDAwcOHDhw4MAtgat+UTVAThUquwG9+gtQ/ssBHDhw4MCBAwduCdzpBtPA2y1MTu+z3ZAGBw4cOHDgwIG7Ga47kJcWJNMgPX2/8mtw4MCBAwcOHLjlcFcbf1UBMQ3QacAuB2Vw4MCBAwcOHLglcKcBNg2qaeN7qlHdbayDAwcOHDhw4MBth0uDZrWwOQWR7i990ODAgQMHDhw4cNvg0kG/bgFyapCw+48r5QcNDhw4cODAgQO3DK49cHfTYN9U47k6uAgOHDhw4MCBA7cNLi0gnq7u9SnQVCP9aQAGBw4cOHDgwIFbBpfeuBp0pwPqVPAFBw4cOHDgwIF7F7j0oF2YdAAwDa7dAUlw4MCBAwcOHLhtcN0gXIWswpQLjcUHUG6EgwMHDhw4cODALYGbaiRPB+oqxFTj+/JBgQMHDhw4cODALYHrrtOCYbeh3IWe2gc4cODAgQMHDtwWuG5AjIPkcIGyW7A8/jk4cODAgQMHDtwyuOnAO1X47Da60wcIDhw4cODAgQP3bnDVQFndSFq4rAJNNaLBgQMHDhw4cOD+K1z1+m5DuvtAL+8DDhw4cODAgQP3IXBpoKwG27QAWi5UVgcLwYEDBw4cOHDglsBNBck0QFf3UW1Qt4M0OHDgwIEDBw7cMri0cZtuKG4IhwG62/gGBw4cOHDgwIHbBmcVgzcCcODAgbPAgfvb9Q3OUPtiYdDL4QAAAABJRU5ErkJggg==">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATgAAAE4CAAAAADqFLC2AAADqElEQVR42u3awVLDMAwE0P7/T8MdphOvpAa1PN/SNon9zGGR/PgySuOBABw4cOAMcOCWwD2K4+f9v17w5PdXv6s+r/qceL3gwIEDBw4cOHDL4I4DYBGiuhHp+67m210vOHDgwIEDBw7cVriphZ0uOL3uArXXCw4cOHDgwIED9yFwU593IdPCKThw4MCBAwcOHLhewE0XWm1EgwMHDhw4cODAfTrcFEg64VfNJ92I2zr54MCBAwcOHDhwQ3CvOgi49bq8XnDgwIEDBw4cuCVw0+MU+qrwWL0/LWzG6wMHDhw4cODAgVsCVy0Epg3mdKHdBnNaWD1+Hjhw4MCBAwcO3FK4alDtTrR94K8437hhDg4cOHDgwIEDtwxuagGnwbbbIE6Degp/HIDBgQMHDhw4cOD+GG4q+E5Bdq/TAuhYQxocOHDgwIEDB+4muOqBwWoDu9rwrm7seIMaHDhw4MCBAwfuTeCmGsJ33d9tgB83pMGBAwcOHDhw4JbCTRck00Ji+v1UAfZyXeDAgQMHDhw4cEvgqoFzaqQLrX4/FqDBgQMHDhw4cOCWwKUvSgPkVKGyG9DTP4D4Pwdw4MCBAwcOHLglcKcTrAbebmFyep7thjQ4cODAgQMHDtzNcN0DedWCZDVITz8vvgYHDhw4cODAgVsOdzXxVxUQqwG6GrDjoAwOHDhw4MCBA7cE7jTAVoNqtfE91ajuNtbBgQMHDhw4cOC2w1WDZlrYnIKozq+60eDAgQMHDhw4cNvgqgf9ugXIqYOEaaBtbzQ4cODAgQMHDtwyuPaBu5sO9k01ntODi+DAgQMHDhw4cNvgqgXE09G9vwo01Uh/GoDBgQMHDhw4cOCWwVUfnAbd6YA6FXzBgQMHDhw4cODeBa660C7M6fOqjfEU5nj+4MCBAwcOHDhwS+C6QTiFTGHiQmO4AXEjHBw4cODAgQMHbgncVCN5OlCnEFON78uNAgcOHDhw4MCBWwLXHacFw25DuQs9NQ9w4MCBAwcOHLgtcN2AWA6SwwXKbsHy+HNw4MCBAwcOHLhlcNOBd6rw2W10VzcQHDhw4MCBAwfu3eDSQJlOpFq4TIGmGtHgwIEDBw4cOHD/FS69v9uQ7m7o5XPAgQMHDhw4cOA+BK4aKNNgWy2AxoXKq2tw4MCBAwcOHLilcFNBshqg03mkDep2kAYHDhw4cODAgVsGV23cVidUbggXA3S38Q0OHDhw4MCBA7cNzgiDNwJw4MCBM8CB+9vxDc5Q+2JIUmpvAAAAAElFTkSuQmCC">
           </div>
         </div>
       
@@ -2644,6 +2666,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
     <div class="prev-next">
+      
+        <a class='prev' href='/2025/09/25/Artalk/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Artalk</p>
+          <p class='content'>Artalk准备
+确保安装了 Node.js 和 git
+Node.js 推荐版本为：Node 18~20
+
+获取到本地
+克隆仓库
+12git clone https://github.com/...</p>
+        </a>
       
       
         <a class='next' href='/2025/09/23/Hexo/'>
@@ -2714,7 +2747,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="toc-text">二级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="toc-text">三级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="toc-text">四级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BA%94%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="toc-text">五级标题</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%97%E8%A1%A8"><span class="toc-text">列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BC%95%E7%94%A8"><span class="toc-text">引用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B6%85%E9%93%BE%E6%8E%A5"><span class="toc-text">超链接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="toc-text">代码块</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%8C%E5%86%85%E4%BB%A3%E7%A0%81"><span class="toc-text">行内代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F"><span class="toc-text">数学公式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8"><span class="toc-text">任务列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%A8%E6%A0%BC"><span class="toc-text">表格</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A8%AA%E7%BA%BF"><span class="toc-text">横线</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#URL"><span class="toc-text">URL</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%BE%E7%89%87"><span class="toc-text">图片</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%97%E4%BD%93"><span class="toc-text">字体</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%A0%E5%B9%B2%E5%98%9B%E5%93%88%E5%93%88%E5%93%8E%E5%93%9F"><span class="toc-text">你干嘛哈哈哎哟</span></a></li></ol></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="toc-text">二级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="toc-text">三级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="toc-text">四级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BA%94%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="toc-text">五级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%85%AD%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="toc-text">六级标题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%97%E8%A1%A8"><span class="toc-text">列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BC%95%E7%94%A8"><span class="toc-text">引用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B6%85%E9%93%BE%E6%8E%A5"><span class="toc-text">超链接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="toc-text">代码块</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%8C%E5%86%85%E4%BB%A3%E7%A0%81"><span class="toc-text">行内代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F"><span class="toc-text">数学公式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8"><span class="toc-text">任务列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%A8%E6%A0%BC"><span class="toc-text">表格</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A8%AA%E7%BA%BF"><span class="toc-text">横线</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#URL"><span class="toc-text">URL</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%BE%E7%89%87"><span class="toc-text">图片</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%97%E4%BD%93"><span class="toc-text">字体</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%A0%E5%B9%B2%E5%98%9B%E5%93%88%E5%93%88%E5%93%8E%E5%93%9F"><span class="toc-text">你干嘛哈哈哎哟</span></a></li></ol></li></ol></li></ol>
   </div>
 </section>
 
@@ -3261,50 +3294,48 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
       <script>
-  volantis.layoutHelper("comments",`<div id="giscus_container"></div>`)
+  volantis.layoutHelper("comments",`<div id="artalk_container"><i class="fa-solid fa-cog fa-spin fa-fw fa-2x"></i></div>`);
+  function load_artalk() {
+    if(!document.querySelectorAll("#artalk_container")[0])return;
+    volantis.css("https://unpkg.com/artalk@2.9.1/dist/Artalk.css");
+    
+    volantis.js("https://unpkg.com/artalk@2.9.1/dist/Artalk.js").then(p_artalk);
+    
+  }
 
-  volantis.giscus = {};
-
-  function check_giscus() {
-    if (volantis.dark.mode === "dark") {
-      volantis.giscus.Theme = 'dark';
-    } else {
-      volantis.giscus.Theme = 'light';
+  function p_artalk() {
+    if(!document.querySelectorAll("#artalk_container")[0])return;
+    let path = pdata.commentPath;
+    let placeholder = pdata.commentPlaceholder || "你觉得怎么样呢？" || "";
+    if (path.length == 0) {
+      path = '' || decodeURI(window.location.pathname);
+    }
+    if(!':year/:month/:day/:title/'.includes('/index.html')) {
+      path = path.replaceAll('/index.html', '/').replaceAll('.html', '')
     }
 
-    return document.getElementById("giscus_container");
+    volantis.artalk = Artalk.init(Object.assign({"server":"http://127.0.0.1:23366/","path":null,"placeholder":"你觉得怎么样呢？","visitor":true,"latex":false,"imageUploader":{"api":null,"token":null,"resp":null}}, {
+      el: '#artalk_container',
+      pageKey: path,
+      pageTitle: document.title,
+      placeholder: placeholder,
+      site: '渗色世界',
+      darkMode: volantis.dark.mode === "dark",
+      pvEl: '#artalk_visitors',
+
+      
+    }));
+    const fancyBoxInstance = new VolantisFancyBox();
+    fancyBoxInstance.bind('.atk-content img:not([atk-emoticon])');
   }
 
-  function p_giscus() {
-    const HEAD = check_giscus();
-    if (!HEAD) return;
-    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"}},pdata.commentConfig)
-    const script = document.createElement('script');
-    script.setAttribute('src', 'https://giscus.app/client.js');
-    Object.keys(cfg).forEach(k=>{
-      if (k != "theme") {
-        script.setAttribute('data-'+k, cfg[k]);
-      }
-    })
-    script.setAttribute('data-theme', volantis.giscus.Theme);
-    script.setAttribute('crossorigin', "anonymous");
-    HEAD.appendChild(script);
-  }
+  load_artalk();
 
-  function dark_giscus() {
-    const HEAD = check_giscus();
-    if (!HEAD) return;
-
-    const message = {
-      setConfig: {
-        theme: volantis.giscus.Theme
-      }
-    };
-    const giscusIframe = document.querySelector('iframe.giscus-frame');
-    giscusIframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+  function dark_artalk() {
+    if(!document.querySelectorAll("#artalk_container")[0]) return;
+    volantis?.artalk?.setDarkMode(volantis.dark.mode === "dark")
   }
-  p_giscus();
-  volantis.dark.push(dark_giscus);
+  volantis.dark.push(dark_artalk);
 </script>
 
     

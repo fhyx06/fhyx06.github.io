@@ -229,6 +229,14 @@ button {
     backdrop-filter: saturate(200%) blur(20px);
   }
 }
+@supports (backdrop-filter: blur(20px)) {
+  .blur#comments {
+    backdrop-filter: unset;
+  }
+}
+#layoutHelper-comments {
+  margin-bottom: 100px;
+}
 .shadow {
   box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
   -webkit-box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
@@ -2011,7 +2019,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1758777730005),
+    lastupdate: new Date(1758798666873),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2019,7 +2027,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       fancybox_js: 'https://unpkg.com/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.umd.js'
     },
     sidebar: {
-      for_page: ["blogger","category","tagcloud","donate"],
+      for_page: ["blogger","music","category","tagcloud","donate","webinfo","lastupdate","feedback","qrcode"],
       for_post: ["toc"],
       webinfo: {
         lastupd: {
@@ -2027,7 +2035,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           friendlyShow: true
         },
         runtime: {
-          data: "2020/01/01",
+          data: "2025/9/20",
           unit: "天"
         }
       }
@@ -3009,50 +3017,48 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
       <script>
-  volantis.layoutHelper("comments",`<div id="giscus_container"></div>`)
+  volantis.layoutHelper("comments",`<div id="artalk_container"><i class="fa-solid fa-cog fa-spin fa-fw fa-2x"></i></div>`);
+  function load_artalk() {
+    if(!document.querySelectorAll("#artalk_container")[0])return;
+    volantis.css("https://unpkg.com/artalk@2.9.1/dist/Artalk.css");
+    
+    volantis.js("https://unpkg.com/artalk@2.9.1/dist/Artalk.js").then(p_artalk);
+    
+  }
 
-  volantis.giscus = {};
-
-  function check_giscus() {
-    if (volantis.dark.mode === "dark") {
-      volantis.giscus.Theme = 'dark';
-    } else {
-      volantis.giscus.Theme = 'light';
+  function p_artalk() {
+    if(!document.querySelectorAll("#artalk_container")[0])return;
+    let path = pdata.commentPath;
+    let placeholder = pdata.commentPlaceholder || "你觉得怎么样呢？" || "";
+    if (path.length == 0) {
+      path = '' || decodeURI(window.location.pathname);
+    }
+    if(!':year/:month/:day/:title/'.includes('/index.html')) {
+      path = path.replaceAll('/index.html', '/').replaceAll('.html', '')
     }
 
-    return document.getElementById("giscus_container");
+    volantis.artalk = Artalk.init(Object.assign({"server":"http://127.0.0.1:23366/","path":null,"placeholder":"你觉得怎么样呢？","visitor":true,"latex":false,"imageUploader":{"api":null,"token":null,"resp":null}}, {
+      el: '#artalk_container',
+      pageKey: path,
+      pageTitle: document.title,
+      placeholder: placeholder,
+      site: '渗色世界',
+      darkMode: volantis.dark.mode === "dark",
+      pvEl: '#artalk_visitors',
+
+      
+    }));
+    const fancyBoxInstance = new VolantisFancyBox();
+    fancyBoxInstance.bind('.atk-content img:not([atk-emoticon])');
   }
 
-  function p_giscus() {
-    const HEAD = check_giscus();
-    if (!HEAD) return;
-    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"}},pdata.commentConfig)
-    const script = document.createElement('script');
-    script.setAttribute('src', 'https://giscus.app/client.js');
-    Object.keys(cfg).forEach(k=>{
-      if (k != "theme") {
-        script.setAttribute('data-'+k, cfg[k]);
-      }
-    })
-    script.setAttribute('data-theme', volantis.giscus.Theme);
-    script.setAttribute('crossorigin', "anonymous");
-    HEAD.appendChild(script);
-  }
+  load_artalk();
 
-  function dark_giscus() {
-    const HEAD = check_giscus();
-    if (!HEAD) return;
-
-    const message = {
-      setConfig: {
-        theme: volantis.giscus.Theme
-      }
-    };
-    const giscusIframe = document.querySelector('iframe.giscus-frame');
-    giscusIframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+  function dark_artalk() {
+    if(!document.querySelectorAll("#artalk_container")[0]) return;
+    volantis?.artalk?.setDarkMode(volantis.dark.mode === "dark")
   }
-  p_giscus();
-  volantis.dark.push(dark_giscus);
+  volantis.dark.push(dark_artalk);
 </script>
 
     

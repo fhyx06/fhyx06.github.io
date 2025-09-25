@@ -229,6 +229,14 @@ button {
     backdrop-filter: saturate(200%) blur(20px);
   }
 }
+@supports (backdrop-filter: blur(20px)) {
+  .blur#comments {
+    backdrop-filter: unset;
+  }
+}
+#layoutHelper-comments {
+  margin-bottom: 100px;
+}
 .shadow {
   box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
   -webkit-box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
@@ -2011,7 +2019,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1758777730005),
+    lastupdate: new Date(1758798666873),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2019,7 +2027,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       fancybox_js: 'https://unpkg.com/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.umd.js'
     },
     sidebar: {
-      for_page: ["blogger","category","tagcloud","donate"],
+      for_page: ["blogger","music","category","tagcloud","donate","webinfo","lastupdate","feedback","qrcode"],
       for_post: ["toc"],
       webinfo: {
         lastupd: {
@@ -2027,7 +2035,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           friendlyShow: true
         },
         runtime: {
-          data: "2020/01/01",
+          data: "2025/9/20",
           unit: "天"
         }
       }
@@ -2399,8 +2407,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
             
 <div class='new-meta-item author' itemprop="author" itemscope itemtype="https://schema.org.cn/Person">
-  <a itemprop="url" class='author' href="/" rel="nofollow">
-    <img itemprop="image" src="/images/icon/favicon-16.ico" class="lazyload" data-srcset="/images/icon/favicon-16.ico" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+  <a itemprop="url" class='author' href="about/" rel="nofollow">
+    <img itemprop="image" src="/images/icon/favicon-32.ico" class="lazyload" data-srcset="/images/icon/favicon-32.ico" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
     <p itemprop="name">η</p>
   </a>
 </div>
@@ -2440,6 +2448,20 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
             
 
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span id="artalk_visitors" data-page-key="/2025/09/23/hello-world/">
+        <i class="fa-light fa-loader fa-spin fa-fw" aria-hidden="true"></i>
+      </span>
+        
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
 
 
           
@@ -2551,7 +2573,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class='hoverbox'>
           <a class='share'><img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/wechat.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
           <div class='target'>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAAAAACi5bZQAAADAUlEQVR42u3aQXLdQAgFQN3/0sneierPA+QSdrP7KlkztDcUcP0R/40LARgwYMCAAbMG5irG17+/+/3PwcX3784/ff84HzBgwIABAwbMOpjjAqj4/ifYNPHp+4EBAwYMGDBg9sNUC7rTwi393mlhNpYPGDBgwIABA+bXwKSFVbXRBQYMGDBgwIAB8xaYbqTwYMCAAQMGDJifD1Mt0NLB2qfn6yeRYMCAAQMGDJhvg6kWWG/9Xc4HDBgwYMCAAbMGZjqqA7WpxlP7/mDAgAEDBgyYNTDpxdPFnbShVB2oVb8fTyLBgAEDBgwYMK+HOQWYXjRKF4TSwV55EgkGDBgwYMCAWQPTBbgeivReKRgYMGDAgAEDZg/MaQHVTTxtdHUbWdXBHBgwYMCAAQNmP0y1QVS98FMF27dtVIEBAwYMGDBgvh1mqpBKG1/TDa50EHf7HhgwYMCAAQNmDUy6yNNtBE0XjN2FJDBgwIABAwbMXph0IShNsDrIq55/es5xowoMGDBgwIAB81qY9ELdxaA0wacKxtv8wIABAwYMGDBrYE4bPuUBVvje9PlxnmDAgAEDBgyY9TBTF+o2tLqNp/bADQwYMGDAgAHzWphyIVRMcLrh1f3+xw4eGDBgwIABA2YNzGlBlCYy1kgKG1jpgA8MGDBgwIABsw9mauGnukg9BV19DgYMGDBgwIDZB3MdRprAVAOqmmD6DwUDBgwYMGDA7INJC6500HXakKo2oqrn3J4PBgwYMGDAgFkD0y3wqlCnz9NCMF3QfqzyBQMGDBgwYMA8DtONqxkpZLdgBAMGDBgwYMD8HJhuQk8tCp02mrqNLTBgwIABAwbMfpjqok31AtVEqwtI5YEbGDBgwIABA2YNTHfg1h3IpYBTgzYwYMCAAQMGDJi0gXV6fvqdFBAMGDBgwIAB8/tgqgVZ9eLpPeP8wIABAwYMGDBrYaoDt+lGUnXhqDqYAwMGDBgwYMDshakmMn6xhxpQx+eBAQMGDBgwYNbAiJsCT4ABAwYMGDBvjb+LuKGKUdyZ0wAAAABJRU5ErkJggg==">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAAAAACi5bZQAAADAUlEQVR42u3aQXLjMAwEQP3/07v37KqMAaiUkDRvdski0b6gBrz+WP9dFwIwYMCAAQNmDczVXF9/f/f5n42bz9/tX32+XA8YMGDAgAEDZh1MuQFqPv8JNi389PnAgAEDBgwYMPthug1dtXFL31dtzI7VAwYMGDBgwID5NTBpY9UNusCAAQMGDBgwYN4CM10pPBgwYMCAAQPm58N0G7R0sPbp+/WTSDBgwIABAwbMt8F0G6y3fm7XAwYMGDBgwIBZA3N6dQdqp4Kn8fnBgAEDBgwYMGtg0oOnF3fSQKk7UOu+P55EggEDBgwYMGBeD1MFOH3RKL0glA722pNIMGDAgAEDBswamCnA9dBKz5WCgQEDBgwYMGD2wFQbqGnhadA1DbK6gzkwYMCAAQMGzH6YbkDUPfBTDdu33agCAwYMGDBgwHw7zKlGKg2+Tgdc6SDu9jkwYMCAAQMGzBqY9CLPNAg63TBOLySBAQMGDBgwYPbCpBeC0gK7g7zu/tV9ykEVGDBgwIABA+a1MOmBpheD0gKfahhv6wMDBgwYMGDArIGpBj7tAVb43On94zrBgAEDBgwYMOthTh1oGmhNg6fxwA0MGDBgwIAB81qYdiPULPB04DV9/8cEDwwYMGDAgAGzBqbaEKWFHAuSwgArHfCBAQMGDBgwYPbBnLrwkzZU3QJP/XFgwIABAwYMmL0wV3GlBZwKoLoFpn8oGDBgwIABA2YfTNpwpYOuaiDVDaK6+9zuDwYMGDBgwIBZAzNt8LpQ1e/TRrBax+OdLxgwYMCAAQPmcZjpuoYrhZw2jGDAgAEDBgyYnwMzLeipi0LVoGkabIEBAwYMGDBg9sOkDV210Uv3OTXYa9cHBgwYMGDAgFkLMx24TQdyKeCpQRsYMGDAgAEDBkwaYFX3T9+TAoIBAwYMGDBgfh9MtyHrHjw9Z1wfGDBgwIABA2YtTHfgdjpI6l446g7mwIABAwYMGDB7YbqFHD/YQwFUeT8wYMCAAQMGzBoY66bBs8CAAQMGDJi3rr+LuKGKY1pmwAAAAABJRU5ErkJggg==">
           </div>
         </div>
       
@@ -3202,50 +3224,48 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
       <script>
-  volantis.layoutHelper("comments",`<div id="giscus_container"></div>`)
+  volantis.layoutHelper("comments",`<div id="artalk_container"><i class="fa-solid fa-cog fa-spin fa-fw fa-2x"></i></div>`);
+  function load_artalk() {
+    if(!document.querySelectorAll("#artalk_container")[0])return;
+    volantis.css("https://unpkg.com/artalk@2.9.1/dist/Artalk.css");
+    
+    volantis.js("https://unpkg.com/artalk@2.9.1/dist/Artalk.js").then(p_artalk);
+    
+  }
 
-  volantis.giscus = {};
-
-  function check_giscus() {
-    if (volantis.dark.mode === "dark") {
-      volantis.giscus.Theme = 'dark';
-    } else {
-      volantis.giscus.Theme = 'light';
+  function p_artalk() {
+    if(!document.querySelectorAll("#artalk_container")[0])return;
+    let path = pdata.commentPath;
+    let placeholder = pdata.commentPlaceholder || "你觉得怎么样呢？" || "";
+    if (path.length == 0) {
+      path = '' || decodeURI(window.location.pathname);
+    }
+    if(!':year/:month/:day/:title/'.includes('/index.html')) {
+      path = path.replaceAll('/index.html', '/').replaceAll('.html', '')
     }
 
-    return document.getElementById("giscus_container");
+    volantis.artalk = Artalk.init(Object.assign({"server":"http://127.0.0.1:23366/","path":null,"placeholder":"你觉得怎么样呢？","visitor":true,"latex":false,"imageUploader":{"api":null,"token":null,"resp":null}}, {
+      el: '#artalk_container',
+      pageKey: path,
+      pageTitle: document.title,
+      placeholder: placeholder,
+      site: '渗色世界',
+      darkMode: volantis.dark.mode === "dark",
+      pvEl: '#artalk_visitors',
+
+      
+    }));
+    const fancyBoxInstance = new VolantisFancyBox();
+    fancyBoxInstance.bind('.atk-content img:not([atk-emoticon])');
   }
 
-  function p_giscus() {
-    const HEAD = check_giscus();
-    if (!HEAD) return;
-    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"}},pdata.commentConfig)
-    const script = document.createElement('script');
-    script.setAttribute('src', 'https://giscus.app/client.js');
-    Object.keys(cfg).forEach(k=>{
-      if (k != "theme") {
-        script.setAttribute('data-'+k, cfg[k]);
-      }
-    })
-    script.setAttribute('data-theme', volantis.giscus.Theme);
-    script.setAttribute('crossorigin', "anonymous");
-    HEAD.appendChild(script);
-  }
+  load_artalk();
 
-  function dark_giscus() {
-    const HEAD = check_giscus();
-    if (!HEAD) return;
-
-    const message = {
-      setConfig: {
-        theme: volantis.giscus.Theme
-      }
-    };
-    const giscusIframe = document.querySelector('iframe.giscus-frame');
-    giscusIframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+  function dark_artalk() {
+    if(!document.querySelectorAll("#artalk_container")[0]) return;
+    volantis?.artalk?.setDarkMode(volantis.dark.mode === "dark")
   }
-  p_giscus();
-  volantis.dark.push(dark_giscus);
+  volantis.dark.push(dark_artalk);
 </script>
 
     

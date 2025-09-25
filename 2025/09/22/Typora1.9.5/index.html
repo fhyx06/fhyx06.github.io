@@ -230,6 +230,14 @@ button {
     backdrop-filter: saturate(200%) blur(20px);
   }
 }
+@supports (backdrop-filter: blur(20px)) {
+  .blur#comments {
+    backdrop-filter: unset;
+  }
+}
+#layoutHelper-comments {
+  margin-bottom: 100px;
+}
 .shadow {
   box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
   -webkit-box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
@@ -2012,7 +2020,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1758777730005),
+    lastupdate: new Date(1758798666873),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2020,7 +2028,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       fancybox_js: 'https://unpkg.com/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.umd.js'
     },
     sidebar: {
-      for_page: ["blogger","category","tagcloud","donate"],
+      for_page: ["blogger","music","category","tagcloud","donate","webinfo","lastupdate","feedback","qrcode"],
       for_post: ["toc"],
       webinfo: {
         lastupd: {
@@ -2028,7 +2036,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           friendlyShow: true
         },
         runtime: {
-          data: "2020/01/01",
+          data: "2025/9/20",
           unit: "天"
         }
       }
@@ -2400,8 +2408,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
             
 <div class='new-meta-item author' itemprop="author" itemscope itemtype="https://schema.org.cn/Person">
-  <a itemprop="url" class='author' href="/" rel="nofollow">
-    <img itemprop="image" src="/images/icon/favicon-16.ico" class="lazyload" data-srcset="/images/icon/favicon-16.ico" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+  <a itemprop="url" class='author' href="about/" rel="nofollow">
+    <img itemprop="image" src="/images/icon/favicon-32.ico" class="lazyload" data-srcset="/images/icon/favicon-32.ico" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
     <p itemprop="name">η</p>
   </a>
 </div>
@@ -2441,6 +2449,20 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
             
 
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span id="artalk_visitors" data-page-key="/2025/09/22/Typora1.9.5/">
+        <i class="fa-light fa-loader fa-spin fa-fw" aria-hidden="true"></i>
+      </span>
+        
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
 
 
           
@@ -2559,7 +2581,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class='hoverbox'>
           <a class='share'><img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/wechat.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
           <div class='target'>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAAAAACi5bZQAAADAUlEQVR42u3aQXICMQwEQP7/6eSeSgpprA0raN/YeIPdXFQjPb6sX9cDARgwYMCAAbMG5hGu8hcV3/v59+7nqfuAAQMGDBgwYPbBdC/aff70QEW4FKz8g4ABAwYMGDBg1sJ0L1B9P71498LH9wEDBgwYMGDAfBzM1P5u8DV+PjBgwIABAwbMx8OkwVT1eXcfGDBgwIABA+b9YdIgqNoYSweT1nUiwYABAwYMGDD/BjNVqN3lc3wfMGDAgAEDBswamNPVbaBVC7nTQaT4PmDAgAEDBgyYNTBpgTQVZF0VXMXnBwMGDBgwYMCsgekWcNXGVvpeGlBVn5cHh8CAAQMGDBgwt4d5DK80kBq7WDjYBAYMGDBgwIDZB5MeqFsgThV46Q8QB1VgwIABAwYMmDUwUw2sbmMufe90UAkMGDBgwIABsx+m+w+nBn5OB4NOA612JxIMGDBgwIABczuYbjBUfS8NuE4HhqoNwXaCBwYMGDBgwIBZB5M25NIDnhZ0l3UiwYABAwYMGDC3gUkHmrsXngq80iCqXBiCAQMGDBgwYNbATAdD6WBQuxALg6mn+8CAAQMGDBgwa2CqDbG04EoPWA2ipgaGwIABAwYMGDD7YdLG2FTDrAuXFn5gwIABAwYMmP0wp4M+aYMsDbSmB4baCR4YMGDAgAED5jYw6eBPGjBdPZjUhgADBgwYMGDArId51QG7QVQ3qOruAwMGDBgwYMC8D0x6oBSs25BLG29/vgcGDBgwYMCAeRuYboBVfR4fPFyXVb5gwIABAwYMmJfBTAVD04HU1L72Dw8GDBgwYMCAWQMzVTB1QaYGlsYHnsCAAQMGDBgw62Cuaqx1A66rgq1yQQgGDBgwYMCAWQtzVQE1XRimBerLOpFgwIABAwYMmDUw04266SCs3HADAwYMGDBgwLw9zGmj63QQaCzYAgMGDBgwYMCshek23Lr70gKxWvCdBmZgwIABAwYMmH0wU42r7sWq33Na0MUNNzBgwIABAwbMbWEsMGDAgAEDBsyy9Q2RKOX/hkmBFgAAAABJRU5ErkJggg==">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAAAAACi5bZQAAAC/0lEQVR42u3aQXLCQAwEQP7/6eSeSgppVg4W9N4wNuy2L6qRHl/Wr+uBAAwYMGDAgFkD8whX+Y+Kz/38vvt56jxgwIABAwYMmH0w3YN2rz/dUBEuBSu/EDBgwIABAwbMWpjuAarPpwfvHvj4PGDAgAEDBgyYj4OZur8bfI3vDwwYMGDAgAHz8TBpMFW93r0PDBgwYMCAAfP+MGkQVG2MpYNJ6zqRYMCAAQMGDJh/g5kq1O7yOT4PGDBgwIABA2YNzOnqNtCqhdzpIFJ8HjBgwIABAwbMGpi0QJoKsq4KruL9gwEDBgwYMGDWwHQLuGpjK30uDaiq15/+LhgwYMCAAQNmDcxjeKWB1NjBwsEmMGDAgAEDBsw+mHRD3QJxqsBLX0AcVIEBAwYMGDBg1sBMNbC6jbn0udNBJTBgwIABAwbMfpjuD04N/JwOBp0GWu1OJBgwYMCAAQPmdjDdYKj6XBpwdQu67j7ihhsYMGDAgAEDZh1M2pBLN3ha0F3WiQQDBgwYMGDA3AamGjR1g6luYZbuY+rFggEDBgwYMGD2wUwHQ+lgULsQC4Opp/eBAQMGDBgwYNbAVBtiacGVbrAaRE0NDIEBAwYMGDBg9sOkjbGphlkXLi38wIABAwYMGDD7YU4HfdIGWRpoTQ8MtRM8MGDAgAEDBsxtYNLBnzRgunowqQ0BBgwYMGDAgFkP86oNdoOoblDVvQ8MGDBgwIAB8z4w6YZSsG5DLm28/fkcGDBgwIABA+ZtYLoBVvV6vPFwXVb5ggEDBgwYMGBeBjMVDE0HUlP3tV88GDBgwIABA2YNzFTB1AWZGlgaH3gCAwYMGDBgwKyDuaqx1g24rgq2ygUhGDBgwIABA2YtzFUF1HRhmBaoL+tEggEDBgwYMGDWwEw36qaDsHLDDQwYMGDAgAHz9jCnja7TQaCxYAsMGDBgwIABsxam23Dr3pcWiNWC7zQwAwMGDBgwYMDsg5lqXHUPVv2f04IubriBAQMGDBgwYG4LY4EBAwYMGDBglq1vkSjl/47vdAsAAAAASUVORK5CYII=">
           </div>
         </div>
       
@@ -3192,50 +3214,48 @@ gfx1201（AMD Radeon RX 9070 XT;AMD Radeon RX 9070）
 
 
       <script>
-  volantis.layoutHelper("comments",`<div id="giscus_container"></div>`)
+  volantis.layoutHelper("comments",`<div id="artalk_container"><i class="fa-solid fa-cog fa-spin fa-fw fa-2x"></i></div>`);
+  function load_artalk() {
+    if(!document.querySelectorAll("#artalk_container")[0])return;
+    volantis.css("https://unpkg.com/artalk@2.9.1/dist/Artalk.css");
+    
+    volantis.js("https://unpkg.com/artalk@2.9.1/dist/Artalk.js").then(p_artalk);
+    
+  }
 
-  volantis.giscus = {};
-
-  function check_giscus() {
-    if (volantis.dark.mode === "dark") {
-      volantis.giscus.Theme = 'dark';
-    } else {
-      volantis.giscus.Theme = 'light';
+  function p_artalk() {
+    if(!document.querySelectorAll("#artalk_container")[0])return;
+    let path = pdata.commentPath;
+    let placeholder = pdata.commentPlaceholder || "你觉得怎么样呢？" || "";
+    if (path.length == 0) {
+      path = '' || decodeURI(window.location.pathname);
+    }
+    if(!':year/:month/:day/:title/'.includes('/index.html')) {
+      path = path.replaceAll('/index.html', '/').replaceAll('.html', '')
     }
 
-    return document.getElementById("giscus_container");
+    volantis.artalk = Artalk.init(Object.assign({"server":"http://127.0.0.1:23366/","path":null,"placeholder":"你觉得怎么样呢？","visitor":true,"latex":false,"imageUploader":{"api":null,"token":null,"resp":null}}, {
+      el: '#artalk_container',
+      pageKey: path,
+      pageTitle: document.title,
+      placeholder: placeholder,
+      site: '渗色世界',
+      darkMode: volantis.dark.mode === "dark",
+      pvEl: '#artalk_visitors',
+
+      
+    }));
+    const fancyBoxInstance = new VolantisFancyBox();
+    fancyBoxInstance.bind('.atk-content img:not([atk-emoticon])');
   }
 
-  function p_giscus() {
-    const HEAD = check_giscus();
-    if (!HEAD) return;
-    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"}},pdata.commentConfig)
-    const script = document.createElement('script');
-    script.setAttribute('src', 'https://giscus.app/client.js');
-    Object.keys(cfg).forEach(k=>{
-      if (k != "theme") {
-        script.setAttribute('data-'+k, cfg[k]);
-      }
-    })
-    script.setAttribute('data-theme', volantis.giscus.Theme);
-    script.setAttribute('crossorigin', "anonymous");
-    HEAD.appendChild(script);
-  }
+  load_artalk();
 
-  function dark_giscus() {
-    const HEAD = check_giscus();
-    if (!HEAD) return;
-
-    const message = {
-      setConfig: {
-        theme: volantis.giscus.Theme
-      }
-    };
-    const giscusIframe = document.querySelector('iframe.giscus-frame');
-    giscusIframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+  function dark_artalk() {
+    if(!document.querySelectorAll("#artalk_container")[0]) return;
+    volantis?.artalk?.setDarkMode(volantis.dark.mode === "dark")
   }
-  p_giscus();
-  volantis.dark.push(dark_giscus);
+  volantis.dark.push(dark_artalk);
 </script>
 
     
