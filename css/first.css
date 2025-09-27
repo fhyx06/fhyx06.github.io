@@ -473,13 +473,14 @@ button {
   margin-top: 32px;
 }
 .cover-wrapper .cover-body .title {
-  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
+  font-family: "Noto Serif SC Bold", "Noto Serif SC", "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
   font-size: 3.125rem;
   line-height: 1.2;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  text-shadow: 0 3px 3px rgba(0,0,0,0.3);
 }
 .cover-wrapper .cover-body .subtitle {
   font-size: 20px;
+  color: rgba(255,255,255,0.7);
 }
 .cover-wrapper .cover-body .logo {
   max-height: 120px;
@@ -836,8 +837,8 @@ button {
   font-display: swap;
 }
 @font-face {
-  font-family: 'Varela Round';
-  src: url("https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/VarelaRound/VarelaRound-Regular.ttf");
+  font-family: 'Noto Serif SC Bold';
+  src: url("/SC/NotoSerifSC-Bold.otf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
@@ -960,7 +961,7 @@ button {
   line-height: 64px;
   padding: 0 24px;
   font-size: 1.25rem;
-  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
+  font-family: "Noto Serif SC Bold", "Noto Serif SC", "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
 }
 .l_header #wrapper .nav-main .title img {
   height: 64px;
@@ -1073,7 +1074,7 @@ button {
   display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
   display: flex;
   height: 64px;
-  width: 240px;
+  width: 310px;
   transition: all 0.28s ease;
   -webkit-transition: all 0.28s ease;
   -khtml-transition: all 0.28s ease;
@@ -1092,7 +1093,7 @@ button {
     -moz-opacity: 0;
   }
   .l_header .m_search:hover {
-    width: 240px;
+    width: 310px;
   }
   .l_header .m_search:hover input::placeholder {
     opacity: 1;

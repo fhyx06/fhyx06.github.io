@@ -1562,7 +1562,7 @@ svg.loading {
   }
 }
 #l_main {
-  width: calc(100% - 1 * 240px);
+  width: calc(100% - 1 * 310px);
   padding-right: 16px;
   float: left;
 }
@@ -1574,12 +1574,12 @@ svg.loading {
 #l_main.no_sidebar {
   width: 100%;
   padding-right: 0;
-  max-width: 840px;
+  max-width: 770px;
   margin: auto;
 }
 @media screen and (min-width: 2048px) {
   #l_main.no_sidebar {
-    max-width: calc(55vw - 240px);
+    max-width: calc(55vw - 310px);
   }
 }
 #l_main.no_sidebar ~#l_side {
@@ -2903,7 +2903,7 @@ img.lazyload:not(.placeholder).loaded {
   visibility: hidden;
 }
 #l_side {
-  width: 240px;
+  width: 310px;
   float: right;
   position: relative;
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
@@ -6098,7 +6098,7 @@ p.p.subtitle:first-child {
 }
 span.p.logo,
 p.p.logo {
-  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
+  font-family: "Noto Serif SC Bold", "Noto Serif SC", "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
 }
 span.p.code,
 p.p.code {
@@ -7589,7 +7589,7 @@ p,
 input,
 pre>span,
 textarea {
-  cursor: url("/images/cursor_32/text.png"), text;
+  cursor: url("/images/cursor_32/text_new.png"), text;
 }
 .fancybox-container .fancybox-stage,
 .fancybox__carousel .is-draggable {
@@ -7716,7 +7716,7 @@ a.result.search-result-fix,
   cursor: url("https://unpkg.com/volantis-static@0.0.1660614606622/media/cursor_32/zoom-out.png"), zoom-out !important;
 }
 .cur-text {
-  cursor: url("/images/cursor_32/text.png"), text !important;
+  cursor: url("/images/cursor_32/text_new.png"), text !important;
 }
 .common_read {
   z-index: auto !important;
@@ -8269,17 +8269,4 @@ ul.list-v.rightmenu li.music .nav.volume .aplayer-volume-bar .aplayer-volume {
 }
 [color-scheme='dark'] .aplayer .aplayer-notice {
   background-color: var(--color-site-bg) !important;
-}
-.icon-snowflake {
-  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
-  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/images/LaSnowflake16.svg");
-  background-size: contain;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  background-repeat: no-repeat;
-  vertical-align: middle;
 }

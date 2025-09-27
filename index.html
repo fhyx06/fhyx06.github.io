@@ -43,7 +43,7 @@
   <!-- Custom Files headBegin end-->
     <link rel="shortcut icon" type='image/x-icon' href="/images/icon/icon.ico">
   <link rel="preload" href="/css/style.css" as="style">
-  <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="/SC/NotoSerifSC-Bold.otf" as="font" type="font/otf" crossorigin="anonymous">
 <link rel="preload" href="/SC/NotoSerifSC-Regular.otf" as="font" type="font/otf" crossorigin="anonymous">
 
   <!-- feed -->
@@ -539,13 +539,14 @@ button {
   margin-top: 32px;
 }
 .cover-wrapper .cover-body .title {
-  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
+  font-family: "Noto Serif SC Bold", "Noto Serif SC", "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
   font-size: 3.125rem;
   line-height: 1.2;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  text-shadow: 0 3px 3px rgba(0,0,0,0.3);
 }
 .cover-wrapper .cover-body .subtitle {
   font-size: 20px;
+  color: rgba(255,255,255,0.7);
 }
 .cover-wrapper .cover-body .logo {
   max-height: 120px;
@@ -902,8 +903,8 @@ button {
   font-display: swap;
 }
 @font-face {
-  font-family: 'Varela Round';
-  src: url("https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/VarelaRound/VarelaRound-Regular.ttf");
+  font-family: 'Noto Serif SC Bold';
+  src: url("/SC/NotoSerifSC-Bold.otf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
@@ -1026,7 +1027,7 @@ button {
   line-height: 64px;
   padding: 0 24px;
   font-size: 1.25rem;
-  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
+  font-family: "Noto Serif SC Bold", "Noto Serif SC", "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
 }
 .l_header #wrapper .nav-main .title img {
   height: 64px;
@@ -1139,7 +1140,7 @@ button {
   display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
   display: flex;
   height: 64px;
-  width: 240px;
+  width: 310px;
   transition: all 0.28s ease;
   -webkit-transition: all 0.28s ease;
   -khtml-transition: all 0.28s ease;
@@ -1158,7 +1159,7 @@ button {
     -moz-opacity: 0;
   }
   .l_header .m_search:hover {
-    width: 240px;
+    width: 310px;
   }
   .l_header .m_search:hover input::placeholder {
     opacity: 1;
@@ -2185,7 +2186,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1758969484016),
+    lastupdate: new Date(1758994875610),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2578,14 +2579,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       <div class="cover-wrapper  search" id='full'>
         
-  <div class='cover-bg lazyload placeholder' data-bg="https://xn--czrr2mxtdf87bxsk.cn/images/yys_loading.png"></div>
+  <div class='cover-bg lazyload placeholder' data-bg="https://fhyx06.cn/pig/134243444_p0.png"></div>
 
 <div class='cover-body'>
   <div class='top'>
     
     
-      <p class="title">雪境 · 慢行</p>
+      <p class="title">空白时间</p>
     
+    
+      <p class="subtitle">静默沉淀，向内而生</p>
     
   </div>
   <div class='bottom'>
@@ -2634,6 +2637,20 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               active-action="action-http:fhyx06cn">
               <p>雪境</p>
+            </a>
+          
+            <a href="/shuoshuo/"
+              
+              
+              active-action="action-shuoshuo">
+              <p>说说</p>
+            </a>
+          
+            <a href="/about/"
+              
+              
+              active-action="action-about">
+              <p>关于</p>
             </a>
           
         
@@ -2707,7 +2724,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <div class='md article-desc' itemprop="articleBody">
     
-      <p>此篇文章用于测试</p>
+      <p>此篇文章用于测试显示效果  :)</p>
     
   </div>
   
@@ -3510,13 +3527,18 @@ gfx1201（AMD Radeon RX 9070 XT;AMD Radeon RX 9070）
 
 
       
+        <div class="webinfo-item">
+          <div>本站总字数：</div>
+          <div>3k 字</div>
+        </div>
+      
 
       
 
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2025-09-27 日</div>
+          <div id="last-update-show">2025-09-28 日</div>
         </div>
       
     </div>
