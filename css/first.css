@@ -476,7 +476,7 @@ button {
   font-family: "Noto Serif SC Bold", "Noto Serif SC", "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
   font-size: 3.125rem;
   line-height: 1.2;
-  text-shadow: 0 3px 3px rgba(0,0,0,0.3);
+  text-shadow: 0 4px 4px rgba(0,0,0,0.3);
 }
 .cover-wrapper .cover-body .subtitle {
   font-size: 20px;
@@ -1074,7 +1074,7 @@ button {
   display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
   display: flex;
   height: 64px;
-  width: 310px;
+  width: 300px;
   transition: all 0.28s ease;
   -webkit-transition: all 0.28s ease;
   -khtml-transition: all 0.28s ease;
@@ -1093,7 +1093,7 @@ button {
     -moz-opacity: 0;
   }
   .l_header .m_search:hover {
-    width: 310px;
+    width: 300px;
   }
   .l_header .m_search:hover input::placeholder {
     opacity: 1;
