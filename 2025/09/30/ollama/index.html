@@ -50,17 +50,17 @@
   <!-- 页面元数据 -->
   <title>ollama - 空白时间</title>
   <meta name="keywords" content="ollama,amd ai,null">
-  <meta desc name="description" content="AMD显卡运行 ollama （WIndows平台） - η - 空白时间">
+  <meta desc name="description" content="本文档旨在记录如何为AMD显卡（如Radeon RX 9070，代号gfx1201）在Windows平台上启用Ollama的GPU加速。由于Ollama官方版本自带的ROCm库通常不支持最新的显卡架构，导致其只能使用CPU进行低效推理。解决方案是从社区获取与特定显卡型号匹配的定制版ROCm库文件，并手动替换到Ol... - η - 空白时间">
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="ollama">
 <meta property="og:url" content="http://111.229.219.141/2025/09/30/ollama/index.html">
 <meta property="og:site_name" content="空白时间">
-<meta property="og:description" content="AMD显卡运行 ollama （WIndows平台）">
+<meta property="og:description" content="本文档旨在记录如何为AMD显卡（如Radeon RX 9070，代号gfx1201）在Windows平台上启用Ollama的GPU加速。由于Ollama官方版本自带的ROCm库通常不支持最新的显卡架构，导致其只能使用CPU进行低效推理。解决方案是从社区获取与特定显卡型号匹配的定制版ROCm库文件，并手动替换到Ollama的安装目录中。文档说明了从识别显卡代号、下载对应ROCm库、替换文件到验证加速">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2025-09-30T13:57:34.000Z">
-<meta property="article:modified_time" content="2025-10-01T18:46:42.559Z">
+<meta property="article:modified_time" content="2025-10-03T13:54:17.572Z">
 <meta property="article:author" content="η">
 <meta property="article:tag" content="ollama">
 <meta property="article:tag" content="amd ai">
@@ -2190,7 +2190,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1759485286723),
+    lastupdate: new Date(1759505266363),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2679,13 +2679,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：642 字</p>
+      <p>字数：826 字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
     <a class='notlink'>
       <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
-      <p>时长：2 分钟</p>
+      <p>时长：3 分钟</p>
     </a>
   </div>
 
@@ -2702,7 +2702,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>AMD显卡运行 ollama （WIndows平台）</p>
+    <p>本文档旨在记录如何为AMD显卡（如Radeon RX 9070，代号gfx1201）在Windows平台上启用Ollama的GPU加速。由于Ollama官方版本自带的ROCm库通常不支持最新的显卡架构，导致其只能使用CPU进行低效推理。解决方案是从社区获取与特定显卡型号匹配的定制版ROCm库文件，并手动替换到Ollama的安装目录中。文档说明了从识别显卡代号、下载对应ROCm库、替换文件到验证加速效果的流程。成功配置后，计算任务将从CPU卸载至GPU，显著提升大语言模型的推理速度与效率。同时，文档还推荐了兼容Ollama的图形化客户端以供选用。</p>
 <span id="more"></span>
 
 <h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><ol>
@@ -2737,7 +2737,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </ol>
 <h2 id="推荐部分"><a href="#推荐部分" class="headerlink" title="推荐部分"></a>推荐部分</h2><p>推荐的客户端：<a target="_blank" rel="noopener" href="https://www.cherry-ai.com/">https://www.cherry-ai.com/</a></p>
 <p>下载后：打开左下角 <code>设置</code> - <code>模型服务</code> - 选择 <code>Ollama</code> - <code>管理</code> 添加自己本地的模型即可。</p>
-<h2 id="（题外）若在无Rcom加速时："><a href="#（题外）若在无Rcom加速时：" class="headerlink" title="（题外）若在无Rcom加速时："></a>（题外）若在无Rcom加速时：</h2><ol>
+<h2 id="若在无Rcom加速时（题外）："><a href="#若在无Rcom加速时（题外）：" class="headerlink" title="若在无Rcom加速时（题外）："></a>若在无Rcom加速时（题外）：</h2><ol>
 <li><p>首先直接打开Ollama进行对话，可以看到正在正常输出</p>
 <details ><summary> 这里是图图 </summary>
               <div class='content'>
@@ -2811,10 +2811,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-10-02T02:46:42+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-10-03T21:54:17+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2025年10月2日 02:46</p>
+    <p>更新于：2025年10月3日 21:54</p>
   </a>
 </div>
 
@@ -2840,7 +2840,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://111.229.219.141/2025/09/30/ollama/&title=ollama - 空白时间&summary=AMD显卡运行 ollama （WIndows平台）"
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://111.229.219.141/2025/09/30/ollama/&title=ollama - 空白时间&summary=本文档旨在记录如何为AMD显卡（如Radeon RX 9070，代号gfx1201）在Windows平台上启用Ollama的GPU加速。由于Ollama官方版本自带的ROCm库通常不支持最新的显卡架构，导致其只能使用CPU进行低效推理。解决方案是从社区获取与特定显卡型号匹配的定制版ROCm库文件，并手动替换到Ollama的安装目录中。文档说明了从识别显卡代号、下载对应ROCm库、替换文件到验证加速效果的流程。成功配置后，计算任务将从CPU卸载至GPU，显著提升大语言模型的推理速度与效率。同时，文档还推荐了兼容Ollama的图形化客户端以供选用。"
           
           >
           
@@ -2852,7 +2852,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://111.229.219.141/2025/09/30/ollama/&title=ollama - 空白时间&summary=AMD显卡运行 ollama （WIndows平台）"
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://111.229.219.141/2025/09/30/ollama/&title=ollama - 空白时间&summary=本文档旨在记录如何为AMD显卡（如Radeon RX 9070，代号gfx1201）在Windows平台上启用Ollama的GPU加速。由于Ollama官方版本自带的ROCm库通常不支持最新的显卡架构，导致其只能使用CPU进行低效推理。解决方案是从社区获取与特定显卡型号匹配的定制版ROCm库文件，并手动替换到Ollama的安装目录中。文档说明了从识别显卡代号、下载对应ROCm库、替换文件到验证加速效果的流程。成功配置后，计算任务将从CPU卸载至GPU，显著提升大语言模型的推理速度与效率。同时，文档还推荐了兼容Ollama的图形化客户端以供选用。"
           
           >
           
@@ -2864,7 +2864,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://111.229.219.141/2025/09/30/ollama/&title=ollama - 空白时间&summary=AMD显卡运行 ollama （WIndows平台）"
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://111.229.219.141/2025/09/30/ollama/&title=ollama - 空白时间&summary=本文档旨在记录如何为AMD显卡（如Radeon RX 9070，代号gfx1201）在Windows平台上启用Ollama的GPU加速。由于Ollama官方版本自带的ROCm库通常不支持最新的显卡架构，导致其只能使用CPU进行低效推理。解决方案是从社区获取与特定显卡型号匹配的定制版ROCm库文件，并手动替换到Ollama的安装目录中。文档说明了从识别显卡代号、下载对应ROCm库、替换文件到验证加速效果的流程。成功配置后，计算任务将从CPU卸载至GPU，显著提升大语言模型的推理速度与效率。同时，文档还推荐了兼容Ollama的图形化客户端以供选用。"
           
           >
           
@@ -2907,26 +2907,24 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class='prev' href='/2025/10/02/link/'>
           <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>链接工具</p>
-          <p class='content'>记录一些链接
+          <p class='content'>记录一些会用到的链接
 
 
 hexo框架
 https://hexo.io/zh-cn/
 
 Volantis主题
-https://volantis.js.org/v6/getting-started/
-
-A...</p>
+https://volantis.js.org/v6/getting-started...</p>
         </a>
       
       
         <a class='next' href='/2025/09/27/Artalk%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/'>
           <p class='title'>Artalk评论系统<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>使用 Docker 部署 Artalk
+          <p class='content'>使用 Docker 部署 Artalk (Volantis主题)
 
 
 Docker 部分启动服务器预先安装 Docker 引擎 并创建一个工作目录，然后执行命令在后台启动容器：
-123456789docker run -...</p>
+12345678...</p>
         </a>
       
     </div>
@@ -2987,7 +2985,7 @@ Docker 部分启动服务器预先安装 Docker 引擎 并创建一个工作目�
 
 
   <div class='content'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87"><span class="toc-text">前期准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E9%83%A8%E5%88%86"><span class="toc-text">下载部分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%BF%E6%8D%A2Rocm"><span class="toc-text">替换Rocm</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8E%A8%E8%8D%90%E9%83%A8%E5%88%86"><span class="toc-text">推荐部分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%88%E9%A2%98%E5%A4%96%EF%BC%89%E8%8B%A5%E5%9C%A8%E6%97%A0Rcom%E5%8A%A0%E9%80%9F%E6%97%B6%EF%BC%9A"><span class="toc-text">（题外）若在无Rcom加速时：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%8C"><span class="toc-text">完</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87"><span class="toc-text">前期准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E9%83%A8%E5%88%86"><span class="toc-text">下载部分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%BF%E6%8D%A2Rocm"><span class="toc-text">替换Rocm</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8E%A8%E8%8D%90%E9%83%A8%E5%88%86"><span class="toc-text">推荐部分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8B%A5%E5%9C%A8%E6%97%A0Rcom%E5%8A%A0%E9%80%9F%E6%97%B6%EF%BC%88%E9%A2%98%E5%A4%96%EF%BC%89%EF%BC%9A"><span class="toc-text">若在无Rcom加速时（题外）：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%8C"><span class="toc-text">完</span></a></li></ol>
   </div>
 </section>
 
@@ -4018,7 +4016,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"空白时间","url":"http://111.229.219.141/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"η","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://111.229.219.141/","sameAs":["https://github.com/volantis-x"],"description":"空白时间"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://111.229.219.141/","name":"空白时间"}},{"@type":"ListItem","position":2,"item":{"@id":"http://111.229.219.141/categories/记录/","name":"记录"}},{"@type":"ListItem","position":3,"item":{"@id":"http://111.229.219.141/2025/09/30/ollama/","name":"ollama"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"空白时间","url":"http://111.229.219.141/","keywords":null,"description":"空白时间","author":{"@type":"Person","name":"η","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://111.229.219.141/","description":"空白时间"},"publisher":{"@type":"Organization","name":"空白时间","url":"http://111.229.219.141/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://111.229.219.141?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"ollama","description":"AMD显卡运行 ollama （WIndows平台）","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://111.229.219.141/2025/09/30/ollama/"},"author":{"@type":"Person","name":"η","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://111.229.219.141/"},"publisher":{"@type":"Organization","name":"空白时间","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://111.229.219.141/2025/09/30/ollama/","wordCount":26,"datePublished":"2025-09-30T13:57:34.000Z","dateModified":"2025-10-01T18:46:42.559Z","articleSection":"记录","keywords":"ollama,amd ai","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"空白时间","url":"http://111.229.219.141/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"η","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://111.229.219.141/","sameAs":["https://github.com/volantis-x"],"description":"空白时间"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://111.229.219.141/","name":"空白时间"}},{"@type":"ListItem","position":2,"item":{"@id":"http://111.229.219.141/categories/记录/","name":"记录"}},{"@type":"ListItem","position":3,"item":{"@id":"http://111.229.219.141/2025/09/30/ollama/","name":"ollama"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"空白时间","url":"http://111.229.219.141/","keywords":null,"description":"空白时间","author":{"@type":"Person","name":"η","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://111.229.219.141/","description":"空白时间"},"publisher":{"@type":"Organization","name":"空白时间","url":"http://111.229.219.141/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://111.229.219.141?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"ollama","description":"本文档旨在记录如何为AMD显卡（如Radeon RX 9070，代号gfx1201）在Windows平台上启用Ollama的GPU加速。由于Ollama官方版本自带的ROCm库通常不支持最新的显卡架构，导致其只能使用CPU进行低效推理。解决方案是从社区获取与特定显卡型号匹配的定制版ROCm库文件，并手动替换到Ollama的安装目录中。文档说明了从识别显卡代号、下载对应ROCm库、替换文件到验证加速效果的流程。成功配置后，计算任务将从CPU卸载至GPU，显著提升大语言模型的推理速度与效率。同时，文档还推荐了兼容Ollama的图形化客户端以供选用。","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://111.229.219.141/2025/09/30/ollama/"},"author":{"@type":"Person","name":"η","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://111.229.219.141/"},"publisher":{"@type":"Organization","name":"空白时间","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://111.229.219.141/2025/09/30/ollama/","wordCount":275,"datePublished":"2025-09-30T13:57:34.000Z","dateModified":"2025-10-03T13:54:17.572Z","articleSection":"记录","keywords":"ollama,amd ai","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

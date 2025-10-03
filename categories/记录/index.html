@@ -2186,7 +2186,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1759485286723),
+    lastupdate: new Date(1759505266363),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2598,10 +2598,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
-          
-        
-          
-        
       
     
     
@@ -2634,7 +2630,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <div class='md article-desc' itemprop="articleBody">
     
-      <p>AMD显卡运行 ollama （WIndows平台）</p>
+      <p>本文档旨在记录如何为AMD显卡（如Radeon RX 9070，代号gfx1201）在Windows平台上启用Ollama的GPU加速。由于Ollama官方版本自带的ROCm库通常不支持最新的显卡架构，导致其只能使用CPU进行低效推理。解决方案是从社区获取与特定显卡型号匹配的定制版ROCm库文件，并手动替换到Ollama的安装目录中。文档说明了从识别显卡代号、下载对应ROCm库、替换文件到验证加速效果的流程。成功配置后，计算任务将从CPU卸载至GPU，显著提升大语言模型的推理速度与效率。同时，文档还推荐了兼容Ollama的图形化客户端以供选用。</p>
     
   </div>
   
@@ -2695,13 +2691,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <div class='md article-desc' itemprop="articleBody">
     
-      
-        使用 Docker 部署 Artalk
-
-
-Docker 部分启动服务器预先安装 Docker 引擎 并创建一个工作目录，然后执行命令在后台启动容器：
-123456789docker run -d \    --name artalk \    -p 8080:23366 \    -v $(pwd)/data:/data \    -e &quot;TZ=Asia/Shanghai&quo...
-      
+      <p>使用 Docker 部署 Artalk (Volantis主题)</p>
     
   </div>
   
@@ -2762,18 +2752,7 @@ Docker 部分启动服务器预先安装 Docker 引擎 并创建一个工作目�
   
   <div class='md article-desc' itemprop="articleBody">
     
-      
-        Ubuntu 部署准备工作
-一台Ubuntu服务器
-
-初始化
-更新系统软件包（也许不需要）
-12345# 更新软件包列表sudo apt update# 升级所有已安装的软件包sudo apt upgrade -y
-
-安装宝塔
-正式版：11.1.0
-1if [ -f /usr/bin/curl ];then curl -sSO https://download.bt.cn/install/i...
-      
+      <p>Ubuntu 部署宝塔</p>
     
   </div>
   
@@ -2794,72 +2773,6 @@ Docker 部分启动服务器预先安装 Docker 引擎 并创建一个工作目�
       
         <div>
           <a class='readmore' href='/2025/09/25/Ubuntu/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://111.229.219.141/2025/09/25/Artalk/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="空白时间">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="空白时间">
-    <meta itemprop="description" content="空白时间">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/09/25/Artalk/"  itemprop="url">
-        Artalk
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        Artalk准备
-安装 Node.js 和 git
-Node.js部分
-123456789101112131415# Download and install nvm:curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash# in lieu of restarting the shell\...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-09-25T18:32:59+08:00">2025-09-25</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E8%AE%B0%E5%BD%95/">记录</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E8%AE%B0%E5%BD%95/" itemprop="url"><span itemprop="name">记录</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2025/09/25/Artalk/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2900,15 +2813,7 @@ Node.js部分
   
   <div class='md article-desc' itemprop="articleBody">
     
-      
-        笔记在本地搭建 Hexo：
-
-确保本地安装了 Node.js 和 Git 
-12345node -v  # 查看node版本npm -v  # 查看包管理工具版本git -vnpm install -g hexo-cli  # 安装 Hexo
-
-在一个空文件夹里运行 
-1234hexo init my-blog    # 初始化一个 Hexo 项目 （my-blog为项目名，自行修改）cd ...
-      
+      <p>梦开始的地方，Hexo基础搭建</p>
     
   </div>
   
@@ -2929,75 +2834,6 @@ Node.js部分
       
         <div>
           <a class='readmore' href='/2025/09/23/Hexo/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://111.229.219.141/2025/09/22/about/">
-  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
-    <meta itemprop="name" content="空白时间">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
-    <meta itemprop="name" content="空白时间">
-    <meta itemprop="description" content="空白时间">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/09/22/about/"  itemprop="url">
-        雪境·慢行
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        雪境·慢行使用 HTML、CSS、JavaScript、 Bootstrap 和 marked 搭建的冰雪数字世界，记录每一次代码飘落般的知识积累。  
-记录每一片雪花都是独特的结晶，正如我在前端之路上的每一次探索：  
-
-用 HTML 构建页面骨架  
-以 CSS 描绘页面样式  
-使用 JavaScript 实现动态功能
-使用 Bootstrap手风琴等部分；marked 读取markd...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-09-22T16:27:04+08:00">2025-09-22</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E8%AE%B0%E5%BD%95/">记录</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E8%AE%B0%E5%BD%95/" itemprop="url"><span itemprop="name">记录</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2025/09/22/about/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -3155,19 +2991,19 @@ Node.js部分
             ><div class='name'>Test</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box"
-            title="/categories/%E5%85%B6%E4%BB%96/" href="/categories/%E5%85%B6%E4%BB%96/"
-            active-action="action-categoriesE585B6E4BB96"
-            ><div class='name'>其他</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
             title="/categories/%E5%B7%A5%E5%85%B7/" href="/categories/%E5%B7%A5%E5%85%B7/"
             active-action="action-categoriesE5B7A5E585B7"
-            ><div class='name'>工具</div><div class='badge'>(4)</div></a></li>
+            ><div class='name'>工具</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E6%96%87%E7%AB%A0%E9%89%B4%E8%B5%8F/" href="/categories/%E6%96%87%E7%AB%A0%E9%89%B4%E8%B5%8F/"
+            active-action="action-categoriesE69687E7ABA0E989B4E8B58F"
+            ><div class='name'>文章鉴赏</div><div class='badge'>(2)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E8%AE%B0%E5%BD%95/" href="/categories/%E8%AE%B0%E5%BD%95/"
             active-action="action-categoriesE8AEB0E5BD95"
-            ><div class='name'>记录</div><div class='badge'>(6)</div></a></li>
+            ><div class='name'>记录</div><div class='badge'>(4)</div></a></li>
         
       </ul>
     </div>
@@ -3192,7 +3028,7 @@ Node.js部分
 
 
     <div class='content'>
-      <a href="/tags/AMD/" style="font-size: 14px; color: #999">AMD</a> <a href="/tags/Scrcpy/" style="font-size: 14px; color: #999">Scrcpy</a> <a href="/tags/amd-ai/" style="font-size: 14px; color: #999">amd ai</a> <a href="/tags/markdown/" style="font-size: 14px; color: #999">markdown</a> <a href="/tags/ollama/" style="font-size: 14px; color: #999">ollama</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 14px; color: #999">测试</a> <a href="/tags/%E8%AF%84%E8%AE%BA/" style="font-size: 24px; color: #555">评论</a> <a href="/tags/%E8%AF%BE%E6%96%87/" style="font-size: 14px; color: #999">课文</a> <a href="/tags/%E9%83%A8%E7%BD%B2/" style="font-size: 14px; color: #999">部署</a> <a href="/tags/%E9%83%A8%E7%BD%B2Hexo/" style="font-size: 14px; color: #999">部署Hexo</a> <a href="/tags/%E9%93%BE%E6%8E%A5/" style="font-size: 14px; color: #999">链接</a> <a href="/tags/%E9%9B%AA%E5%A2%83%C2%B7%E6%85%A2%E8%A1%8C/" style="font-size: 14px; color: #999">雪境·慢行</a>
+      <a href="/tags/Scrcpy/" style="font-size: 14px; color: #999">Scrcpy</a> <a href="/tags/amd-ai/" style="font-size: 14px; color: #999">amd ai</a> <a href="/tags/markdown/" style="font-size: 14px; color: #999">markdown</a> <a href="/tags/ollama/" style="font-size: 14px; color: #999">ollama</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 14px; color: #999">测试</a> <a href="/tags/%E8%AF%84%E8%AE%BA/" style="font-size: 14px; color: #999">评论</a> <a href="/tags/%E8%AF%BE%E6%96%87%E3%80%8A%E5%81%B7%E8%A2%AD%E3%80%8B/" style="font-size: 14px; color: #999">课文《偷袭》</a> <a href="/tags/%E8%AF%BE%E6%96%87%E3%80%8A%E6%BD%98%E5%98%8E%E4%B9%8B%E4%BA%A4%E3%80%8B/" style="font-size: 14px; color: #999">课文《潘嘎之交》</a> <a href="/tags/%E9%83%A8%E7%BD%B2/" style="font-size: 14px; color: #999">部署</a> <a href="/tags/%E9%83%A8%E7%BD%B2Hexo/" style="font-size: 14px; color: #999">部署Hexo</a> <a href="/tags/%E9%93%BE%E6%8E%A5/" style="font-size: 14px; color: #999">链接</a>
     </div>
   </section>
 
@@ -3220,7 +3056,7 @@ Node.js部分
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>12 篇</div>
+          <div>10 篇</div>
         </div>
       
 
@@ -3235,7 +3071,7 @@ Node.js部分
       
         <div class="webinfo-item">
           <div>本站总字数：</div>
-          <div>5k 字</div>
+          <div>5.2k 字</div>
         </div>
       
 
@@ -3269,7 +3105,7 @@ Node.js部分
 
 
   <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2025/09/25/Ubuntu/"><div class="item"><time>2025-10-02</time><span>记录</span></div><span>Ubuntu部分</span></a></li><li><a class="widget-last" href="/2025/09/22/Typora1.9.5/"><div class="item"><time>2025-10-02</time><span>工具</span></div><span>Typora1.9.5</span></a></li><li><a class="widget-last" href="/2025/09/23/Hexo/"><div class="item"><time>2025-10-02</time><span>记录</span></div><span>Hexo</span></a></li><li><a class="widget-last" href="/2025/09/27/Artalk%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/"><div class="item"><time>2025-10-02</time><span>记录</span></div><span>Artalk评论系统</span></a></li><li><a class="widget-last" href="/2025/09/25/Artalk/"><div class="item"><time>2025-10-02</time><span>记录</span></div><span>Artalk</span></a></li></ul>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2025/10/03/pgzj/"><div class="item"><time>2025-10-03</time><span>文章鉴赏</span></div><span>文章鉴赏《潘嘎之交》</span></a></li><li><a class="widget-last" href="/2025/09/30/ollama/"><div class="item"><time>2025-10-03</time><span>记录</span></div><span>ollama</span></a></li><li><a class="widget-last" href="/2025/09/22/Scrcpy_new/"><div class="item"><time>2025-10-03</time><span>工具</span></div><span>Scrcpy</span></a></li><li><a class="widget-last" href="/2025/09/22/Typora1.9.5/"><div class="item"><time>2025-10-03</time><span>工具</span></div><span>Typora1.9.5</span></a></li><li><a class="widget-last" href="/2025/09/23/Hexo/"><div class="item"><time>2025-10-03</time><span>记录</span></div><span>Hexo</span></a></li></ul>
   </div>
 </section>
 
