@@ -831,7 +831,7 @@ button {
 }
 @font-face {
   font-family: 'Noto Serif SC';
-  src: url("/SC/NotoSerifSC-Regular.otf");
+  src: url("https://fhyx06.cn/SC/NotoSerifSC-Regular.otf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
