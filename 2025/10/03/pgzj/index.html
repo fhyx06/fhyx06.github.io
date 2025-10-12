@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN,en,default">
-    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/#6.0.0-alpha.1'>
+  
+
+  <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/#6.0.0-alpha.1'>
   <meta name="generator" content="Hexo 7.3.0">
   <meta name="Volantis" content="6.0.0-alpha.1">
   <meta charset="utf-8">
@@ -44,7 +46,7 @@
     <link rel="shortcut icon" type='image/x-icon' href="/images/icon/icon.ico">
   <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="/SC/NotoSerifSC-Bold.otf" as="font" type="font/otf" crossorigin="anonymous">
-<link rel="preload" href="https://fhyx06.cn/SC/NotoSerifSC-Regular.otf" as="font" type="font/otf" crossorigin="anonymous">
+<link rel="preload" href="/SC/LXGWWenKai-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- feed -->
   <!-- 页面元数据 -->
@@ -60,7 +62,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2025-10-03T14:21:29.000Z">
-<meta property="article:modified_time" content="2025-10-03T15:32:36.243Z">
+<meta property="article:modified_time" content="2025-10-12T13:02:31.811Z">
 <meta property="article:author" content="η">
 <meta property="article:tag" content="课文《潘嘎之交》">
 <meta name="twitter:card" content="summary">
@@ -900,7 +902,7 @@ button {
 }
 @font-face {
   font-family: 'Noto Serif SC';
-  src: url("https://fhyx06.cn/SC/NotoSerifSC-Regular.otf");
+  src: url("/SC/LXGWWenKai-Regular.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
@@ -2189,7 +2191,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1759538254824),
+    lastupdate: new Date(1760279654167),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2197,8 +2199,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       fancybox_js: 'https://unpkg.com/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.umd.js'
     },
     sidebar: {
-      for_page: ["blogger","music","category","tagcloud","donate","webinfo","lastupdate","feedback","qrcode"],
-      for_post: ["toc"],
+      for_page: ["blogger","music","tagcloud","webinfo","lastupdate","feedback","qrcode"],
+      for_post: ["toc","music"],
       webinfo: {
         lastupd: {
           enable: true,
@@ -2219,7 +2221,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       },
       
       
-      rightmenus: {"enable":true,"order":["plugins.navigation","hr","plugins.inputBox","plugins.seletctText","plugins.elementCheck","plugins.elementImage","menus.link","hr","menus.darkMode","plugins.articlePage","music"],"options":{"iconPrefix":"fa-solid","articleShowLink":false,"musicAlwaysShow":false},"plugins":{"navigation":[{"id":"left","name":"转到上一页","icon":"fa-solid fa-arrow-left","event":"history.back()","group":"navigation"},{"id":"right","name":"转到下一页","icon":"fa-solid fa-arrow-right","event":"history.forward()","group":"navigation"},{"id":"redo","name":"刷新当前页面","icon":"fa-solid fa-redo","event":"window.location.reload()","group":"navigation"},{"id":"up","name":"回到顶部","icon":"fa-solid fa-arrow-up","event":"VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)","group":"navigation"}],"inputBox":[{"id":"copyPaste","name":"粘贴文本","icon":"fa-solid fa-paste","event":"copyPaste","group":"inputBox"},{"id":"copyAll","name":"全选文本","icon":"fa-solid fa-object-ungroup","event":"copyAll","group":"inputBox"},{"id":"copyCut","name":"剪切文本","icon":"fa-solid fa-cut","event":"copyCut","group":"inputBox"}],"seletctText":[{"id":"copyText","name":"复制文本","icon":"fa-solid fa-copy","event":"copyText","group":"seletctText"},{"id":"searchWord","name":"站内搜索","icon":"fa-solid fa-search","event":"OpenSearch(__text__)","group":"seletctText"},{"id":"bingSearch","name":"必应搜索","icon":"fa-solid fa-search","event":"window.open(`https://cn.bing.com/search?q=${__text__}`)","group":"seletctText"}],"elementCheck":[{"id":"openTab","name":"新标签页打开","icon":"fa-solid fa-external-link-square-alt","event":"window.open(__link__)","group":"elementCheck"},{"id":"copyLink","name":"复制链接地址","icon":"fa-solid fa-link","event":"copyLink","group":"elementCheck"}],"elementImage":[{"id":"copyImg","name":"复制图片","icon":"fa-solid fa-image","event":"copyImg","group":"elementImage"},{"id":"googleImg","name":"谷歌识图","icon":"fa-solid fa-images","event":"window.open(`https://www.google.com.hk/searchbyimage?image_url=${__link__}`)","group":"elementImage"}],"articlePage":[{"id":"printMode","name":"打印页面","icon":"fa-solid fa-print","event":"printMode","group":"articlePage"},{"id":"readMode","name":"阅读模式","icon":"fa-solid fa-book-open","event":"readMode","group":"articlePage"}]},"menus":{"link":["hr"],"darkMode":[{"id":"darkMode","name":"暗黑模式","icon":"fa-solid fa-moon","event":"volantis.dark.toggle()","group":"darkMode"}]}}
+      rightmenus: {"enable":true,"order":["plugins.navigation","hr","plugins.inputBox","plugins.seletctText","plugins.elementCheck","plugins.elementImage","menus.link","hr","menus.darkMode","plugins.articlePage","hr","music"],"options":{"iconPrefix":"fa-solid","articleShowLink":false,"musicAlwaysShow":true},"plugins":{"navigation":[{"id":"left","name":"转到上一页","icon":"fa-solid fa-arrow-left","event":"history.back()","group":"navigation"},{"id":"right","name":"转到下一页","icon":"fa-solid fa-arrow-right","event":"history.forward()","group":"navigation"},{"id":"redo","name":"刷新当前页面","icon":"fa-solid fa-redo","event":"window.location.reload()","group":"navigation"},{"id":"up","name":"回到顶部","icon":"fa-solid fa-arrow-up","event":"VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)","group":"navigation"}],"inputBox":[{"id":"copyPaste","name":"粘贴文本","icon":"fa-solid fa-paste","event":"copyPaste","group":"inputBox"},{"id":"copyAll","name":"全选文本","icon":"fa-solid fa-object-ungroup","event":"copyAll","group":"inputBox"},{"id":"copyCut","name":"剪切文本","icon":"fa-solid fa-cut","event":"copyCut","group":"inputBox"}],"seletctText":[{"id":"copyText","name":"复制文本","icon":"fa-solid fa-copy","event":"copyText","group":"seletctText"},{"id":"searchWord","name":"站内搜索","icon":"fa-solid fa-search","event":"OpenSearch(__text__)","group":"seletctText"},{"id":"bingSearch","name":"必应搜索","icon":"fa-solid fa-search","event":"window.open(`https://cn.bing.com/search?q=${__text__}`)","group":"seletctText"}],"elementCheck":[{"id":"openTab","name":"新标签页打开","icon":"fa-solid fa-external-link-square-alt","event":"window.open(__link__)","group":"elementCheck"},{"id":"copyLink","name":"复制链接地址","icon":"fa-solid fa-link","event":"copyLink","group":"elementCheck"}],"elementImage":[{"id":"copyImg","name":"复制图片","icon":"fa-solid fa-image","event":"copyImg","group":"elementImage"},{"id":"googleImg","name":"谷歌识图","icon":"fa-solid fa-images","event":"window.open(`https://www.google.com.hk/searchbyimage?image_url=${__link__}`)","group":"elementImage"}],"articlePage":[{"id":"printMode","name":"打印页面","icon":"fa-solid fa-print","event":"printMode","group":"articlePage"},{"id":"readMode","name":"阅读模式","icon":"fa-solid fa-book-open","event":"readMode","group":"articlePage"}]},"menus":{"link":["hr"],"darkMode":[{"id":"darkMode","name":"暗黑模式","icon":"fa-solid fa-moon","event":"volantis.dark.toggle()","group":"darkMode"}]}}
       
     },
     search: {
@@ -2359,13 +2361,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                target="_blank" rel="noopener" href="http://fhyx06.cn/" title="雪境"
+                href="/links/" title="部分链接"
                   
                   
                   
-                    active-action="action-http:fhyx06cn"
+                    active-action="action-links"
                   >
-                  <i class='fa-regular fa-snowflake fa-fw'></i>雪境
+                  <i class='fa-regular fa-snowflake fa-fw'></i>部分链接
                 </a>
                 
               </li>
@@ -2507,13 +2509,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                target="_blank" rel="noopener" href="http://fhyx06.cn/" title="雪境"
+                href="/links/" title="部分链接"
                   
                   
                   
-                    active-action="action-http:fhyx06cn"
+                    active-action="action-links"
                   >
-                  <i class='fa-regular fa-snowflake fa-fw'></i>雪境
+                  <i class='fa-regular fa-snowflake fa-fw'></i>部分链接
                 </a>
                 
               </li>
@@ -2706,10 +2708,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <h3 id="潘嘎之交-①"><a href="#潘嘎之交-①" class="headerlink" title=" 潘嘎之交 ①"></a><center> <strong>潘嘎之交</strong> <sup>①</sup></center></h3><center>[抖] 抖诗词</center>
 
+<br>
+
 <hr>
 
-<p>导读</p>
-<p>　　人们常说“人生得一知己已足矣”，可见知己难寻。通过学习本文，体会潘嘎之交的真诚可贵，珍惜友情。</p>
+<h3 id=""><a href="#" class="headerlink" title="  "></a><span>  <span class='p green'><img src=https://fhyx06.cn/pig/le4.svg> 导读</span></h3><p>　　人们常说“人生得一知己已足矣”，可见知己难寻。通过学习本文，体会潘嘎之交的真诚可贵，珍惜友情。</p>
 <hr>
 
 <p>　　<strong>嘎子<sup>②</sup>孟伟者，保定人也。少时常与日寇游击，而立后，以卖酒为生。一日，嘎直播，众人齐伐：“汝之酒，三十贯，饮之甚假，非人哉！”</strong></p>
@@ -2724,7 +2727,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>② [嘎子]：名孟伟。春秋初期的军事家与经济学家。</p>
 <p>③ [潘子]：名长江。齐国学家，二人转艺术家和经济学家。</p>
 <p>④ [家人]：春秋时期暗语，专指打赏或付款下单的人，与“老铁”相似</p>
-<h2 id="课后习题"><a href="#课后习题" class="headerlink" title="课后习题"></a>课后习题</h2><h3 id="思考探究"><a href="#思考探究" class="headerlink" title="思考探究"></a>思考探究</h3><p>一、<strong>文言基础</strong></p>
+<h2 id="-1"><a href="#-1" class="headerlink" title="  "></a><span>  <span class='p green'><img src=https://fhyx06.cn/pig/RiQuestionFill.svg> 课后习题</span></h2><h3 id="思考探究"><a href="#思考探究" class="headerlink" title="思考探究"></a>思考探究</h3><p>一、<strong>文言基础</strong></p>
 <ol>
 <li><p>解释下列句中着重字的词语：</p>
 <br>
@@ -2780,10 +2783,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-10-03T23:32:36+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-10-12T21:02:31+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2025年10月3日 23:32</p>
+    <p>更新于：2025年10月12日 21:02</p>
   </a>
 </div>
 
@@ -2921,6 +2924,44 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   
 
+  
+    
+    
+      
+
+  <section class='widget desktop mobile music'>
+    
+
+    <div class='content'>
+      
+
+  
+    
+      <meting-js
+        theme='#1BCDFC'
+        autoplay='false'
+        volume='0.7'
+        loop='all'
+        order='list'
+        fixed='false'
+        list-max-height='320px'
+        server='netease'
+        type='playlist'
+        id='14326234190'
+        list-folded='false'>
+      </meting-js>
+    
+  
+
+
+    </div>
+
+  </section>
+
+
+    
+  
+
 
 <div class="widget-sticky">
 
@@ -2938,7 +2979,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BD%98%E5%98%8E%E4%B9%8B%E4%BA%A4-%E2%91%A0"><span class="toc-text"> 潘嘎之交 ①</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98"><span class="toc-text">课后习题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%80%83%E6%8E%A2%E7%A9%B6"><span class="toc-text">思考探究</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BD%98%E5%98%8E%E4%B9%8B%E4%BA%A4-%E2%91%A0"><span class="toc-text"> 潘嘎之交 ①</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-text">   导读</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-1"><span class="toc-text">   课后习题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%80%83%E6%8E%A2%E7%A9%B6"><span class="toc-text">思考探究</span></a></li></ol>
   </div>
 </section>
 
@@ -3015,7 +3056,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       
         
-          <div><p>本站使用 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a> 搭建，基于 <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/">Volantis</a> 主题修改</p>
+          <div><p>本站使用<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a>搭建，基于<a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/">Volantis</a>主题修改</p>
 </div>
         
       
@@ -3240,6 +3281,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   </li>
 
 
+
+    <hr class="menuLoad-Content" >
+
+
 <div id="menuMusic">
   <li class='music name menuOption-Content'>
     <p class='nav music-title fix-cursor-default'></p>
@@ -3363,6 +3408,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   //RightMenusFunction['readMode'] = (fun) => {fun()}
+
+
 
 
 
@@ -4023,7 +4070,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"空白时间","url":"http://111.229.219.141/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"η","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://111.229.219.141/","sameAs":["https://github.com/volantis-x"],"description":"空白时间"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://111.229.219.141/","name":"空白时间"}},{"@type":"ListItem","position":2,"item":{"@id":"http://111.229.219.141/categories/文章鉴赏/","name":"文章鉴赏"}},{"@type":"ListItem","position":3,"item":{"@id":"http://111.229.219.141/2025/10/03/pgzj/","name":"文章鉴赏《潘嘎之交》"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"空白时间","url":"http://111.229.219.141/","keywords":null,"description":"空白时间","author":{"@type":"Person","name":"η","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://111.229.219.141/","description":"空白时间"},"publisher":{"@type":"Organization","name":"空白时间","url":"http://111.229.219.141/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://111.229.219.141?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"文章鉴赏《潘嘎之交》","description":"文章摘要：本文节选自《抖记·潘噶列传》，以简洁传神的笔触，记述了网络时代背景下“潘嘎之交”的经典故事。文章分为前后两个对比鲜明的场景。前半部分，资深艺术家潘叔以长者姿态谆谆告诫晚辈嘎子，指出网络直播卖酒“水很深”，年轻的他“把握不住”，嘎子则虚心受教，场面诚恳动人。后半部分，情节陡然反转，潘叔自己却投身于卖酒直播，并宣称“非长江不能握”，前后言行形成巨大反差。而嘎子对此只能无奈叹息，一句“今日之潘非复东宁大郎”道尽了人设崩塌与世态炎凉。","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://111.229.219.141/2025/10/03/pgzj/"},"author":{"@type":"Person","name":"η","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://111.229.219.141/"},"publisher":{"@type":"Organization","name":"空白时间","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://111.229.219.141/2025/10/03/pgzj/","wordCount":220,"datePublished":"2025-10-03T14:21:29.000Z","dateModified":"2025-10-03T15:32:36.243Z","articleSection":"文章鉴赏","keywords":"课文《潘嘎之交》","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"空白时间","url":"http://111.229.219.141/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"η","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://111.229.219.141/","sameAs":["https://github.com/volantis-x"],"description":"空白时间"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://111.229.219.141/","name":"空白时间"}},{"@type":"ListItem","position":2,"item":{"@id":"http://111.229.219.141/categories/文章鉴赏/","name":"文章鉴赏"}},{"@type":"ListItem","position":3,"item":{"@id":"http://111.229.219.141/2025/10/03/pgzj/","name":"文章鉴赏《潘嘎之交》"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"空白时间","url":"http://111.229.219.141/","keywords":null,"description":"空白时间","author":{"@type":"Person","name":"η","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://111.229.219.141/","description":"空白时间"},"publisher":{"@type":"Organization","name":"空白时间","url":"http://111.229.219.141/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://111.229.219.141?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"文章鉴赏《潘嘎之交》","description":"文章摘要：本文节选自《抖记·潘噶列传》，以简洁传神的笔触，记述了网络时代背景下“潘嘎之交”的经典故事。文章分为前后两个对比鲜明的场景。前半部分，资深艺术家潘叔以长者姿态谆谆告诫晚辈嘎子，指出网络直播卖酒“水很深”，年轻的他“把握不住”，嘎子则虚心受教，场面诚恳动人。后半部分，情节陡然反转，潘叔自己却投身于卖酒直播，并宣称“非长江不能握”，前后言行形成巨大反差。而嘎子对此只能无奈叹息，一句“今日之潘非复东宁大郎”道尽了人设崩塌与世态炎凉。","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://111.229.219.141/2025/10/03/pgzj/"},"author":{"@type":"Person","name":"η","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://111.229.219.141/"},"publisher":{"@type":"Organization","name":"空白时间","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://111.229.219.141/2025/10/03/pgzj/","wordCount":220,"datePublished":"2025-10-03T14:21:29.000Z","dateModified":"2025-10-12T13:02:31.811Z","articleSection":"文章鉴赏","keywords":"课文《潘嘎之交》","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
@@ -4034,5 +4081,6 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     <!-- Custom Files bodyEnd begin-->
     
     <!-- Custom Files bodyEnd end-->
+
   </body>
 </html>
