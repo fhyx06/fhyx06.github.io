@@ -831,14 +831,14 @@ button {
 }
 @font-face {
   font-family: 'Noto Serif SC';
-  src: url("/SC/LXGWWenKai-Regular.ttf");
+  src: url("https://cos.blanktime.cn/assets/SC/LXGWWenKai-Regular.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
 }
 @font-face {
   font-family: 'Noto Serif SC Bold';
-  src: url("/SC/NotoSerifSC-Bold.otf");
+  src: url("https://cos.blanktime.cn/assets/SC/NotoSerifSC-Bold.otf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;

@@ -8,7 +8,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://111.229.219.141/2025/09/30/ollama/"/>
+  <link rel="canonical" href="http://blanktime.cn/2025/09/30/ollama/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -45,8 +45,8 @@
   <!-- Custom Files headBegin end-->
     <link rel="shortcut icon" type='image/x-icon' href="/images/icon/icon.ico">
   <link rel="preload" href="/css/style.css" as="style">
-  <link rel="preload" href="/SC/NotoSerifSC-Bold.otf" as="font" type="font/otf" crossorigin="anonymous">
-<link rel="preload" href="/SC/LXGWWenKai-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="https://cos.blanktime.cn/assets/SC/NotoSerifSC-Bold.otf" as="font" type="font/otf" crossorigin="anonymous">
+<link rel="preload" href="https://cos.blanktime.cn/assets/SC/LXGWWenKai-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- feed -->
   <!-- 页面元数据 -->
@@ -56,13 +56,13 @@
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="ollama">
-<meta property="og:url" content="http://111.229.219.141/2025/09/30/ollama/index.html">
+<meta property="og:url" content="http://blanktime.cn/2025/09/30/ollama/index.html">
 <meta property="og:site_name" content="空白时间">
 <meta property="og:description" content="本文档旨在记录如何为AMD显卡（如Radeon RX 9070，代号gfx1201）在Windows平台上启用Ollama的GPU加速。由于Ollama官方版本自带的ROCm库通常不支持最新的显卡架构，导致其只能使用CPU进行低效推理。解决方案是从社区获取与特定显卡型号匹配的定制版ROCm库文件，并手动替换到Ollama的安装目录中。文档说明了从识别显卡代号、下载对应ROCm库、替换文件到验证加速">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2025-09-30T13:57:34.000Z">
-<meta property="article:modified_time" content="2025-10-03T13:54:17.572Z">
+<meta property="article:modified_time" content="2025-10-13T09:29:07.182Z">
 <meta property="article:author" content="η">
 <meta property="article:tag" content="ollama">
 <meta property="article:tag" content="amd ai">
@@ -903,14 +903,14 @@ button {
 }
 @font-face {
   font-family: 'Noto Serif SC';
-  src: url("/SC/LXGWWenKai-Regular.ttf");
+  src: url("https://cos.blanktime.cn/assets/SC/LXGWWenKai-Regular.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
 }
 @font-face {
   font-family: 'Noto Serif SC Bold';
-  src: url("/SC/NotoSerifSC-Bold.otf");
+  src: url("https://cos.blanktime.cn/assets/SC/NotoSerifSC-Bold.otf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
@@ -2192,7 +2192,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1760279654167),
+    lastupdate: new Date(1760354115815),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2589,7 +2589,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="https://schema.org.cn/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://111.229.219.141/2025/09/30/ollama/">
+  <link itemprop="mainEntityOfPage" href="http://blanktime.cn/2025/09/30/ollama/">
   <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
     <meta itemprop="name" content="空白时间">
   </span>
@@ -2717,7 +2717,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rocm.gfx1201.for.hip.skd.6.2.4-no-optimized.7z</span><br></pre></td></tr></table></figure>
 <details ><summary> 俺是图图 </summary>
               <div class='content'>
-              <p><img src="https://fhyx06.cn/pig/gfx1201.png" class="lazyload" data-srcset="https://fhyx06.cn/pig/gfx1201.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+              <p><img src="http://cos.blanktime.cn/assets/images/gfx1201.png" class="lazyload" data-srcset="http://cos.blanktime.cn/assets/images/gfx1201.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
               </div>
             </details></li>
 <li><p>下载Ollama <a target="_blank" rel="noopener" href="https://ollama.com/">https://ollama.com/</a></p>
@@ -2743,14 +2743,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li><p>首先直接打开Ollama进行对话，可以看到正在正常输出</p>
 <details ><summary> 这里是图图 </summary>
               <div class='content'>
-              <p><img src="https://fhyx06.cn/pig/speak.png" class="lazyload" data-srcset="https://fhyx06.cn/pig/speak.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+              <p><img src="http://cos.blanktime.cn/assets/images/speak.png" class="lazyload" data-srcset="http://cos.blanktime.cn/assets/images/speak.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
               </div>
             </details>
 </li>
 <li><p>明显可以看到CPU压力很大，GPU没干活</p>
 <details ><summary> 这里是图图 </summary>
               <div class='content'>
-              <p><img src="https://fhyx06.cn/pig/cpu.png" class="lazyload" data-srcset="https://fhyx06.cn/pig/cpu.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p><p><img src="https://fhyx06.cn/pig/gpu.png" class="lazyload" data-srcset="https://fhyx06.cn/pig/gpu.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+              <p><img src="http://cos.blanktime.cn/assets/images/cpu.png" class="lazyload" data-srcset="http://cos.blanktime.cn/assets/images/cpu.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p><p><img src="http://cos.blanktime.cn/assets/images/gpu.png" class="lazyload" data-srcset="http://cos.blanktime.cn/assets/images/gpu.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
               </div>
             </details></li>
 <li><p>打开日志 <code>server.log</code> 可以看到</p>
@@ -2781,7 +2781,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </ol>
 <h2 id="完"><a href="#完" class="headerlink" title="完"></a>完</h2><div style="position: relative; padding-bottom: 56.25%; height: 0;">
   <iframe
-    src="//player.bilibili.com/player.html?isOutside=true&aid=387793878&bvid=BV1jd4y1X7u3&cid=828174477&p=1&autoplay=false"
+    src="//player.bilibili.com/player.html?isOutside=true&aid=389676081&bvid=BV1Pd4y1C7fY&cid=878432670&p=1&autoplay=false"
     scrolling="no"
     border="0"
     frameborder="no"
@@ -2813,10 +2813,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-10-03T21:54:17+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-10-13T17:29:07+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2025年10月3日 21:54</p>
+    <p>更新于：2025年10月13日 17:29</p>
   </a>
 </div>
 
@@ -2842,7 +2842,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://111.229.219.141/2025/09/30/ollama/&title=ollama - 空白时间&summary=本文档旨在记录如何为AMD显卡（如Radeon RX 9070，代号gfx1201）在Windows平台上启用Ollama的GPU加速。由于Ollama官方版本自带的ROCm库通常不支持最新的显卡架构，导致其只能使用CPU进行低效推理。解决方案是从社区获取与特定显卡型号匹配的定制版ROCm库文件，并手动替换到Ollama的安装目录中。文档说明了从识别显卡代号、下载对应ROCm库、替换文件到验证加速效果的流程。成功配置后，计算任务将从CPU卸载至GPU，显著提升大语言模型的推理速度与效率。同时，文档还推荐了兼容Ollama的图形化客户端以供选用。"
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blanktime.cn/2025/09/30/ollama/&title=ollama - 空白时间&summary=本文档旨在记录如何为AMD显卡（如Radeon RX 9070，代号gfx1201）在Windows平台上启用Ollama的GPU加速。由于Ollama官方版本自带的ROCm库通常不支持最新的显卡架构，导致其只能使用CPU进行低效推理。解决方案是从社区获取与特定显卡型号匹配的定制版ROCm库文件，并手动替换到Ollama的安装目录中。文档说明了从识别显卡代号、下载对应ROCm库、替换文件到验证加速效果的流程。成功配置后，计算任务将从CPU卸载至GPU，显著提升大语言模型的推理速度与效率。同时，文档还推荐了兼容Ollama的图形化客户端以供选用。"
           
           >
           
@@ -2854,7 +2854,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://111.229.219.141/2025/09/30/ollama/&title=ollama - 空白时间&summary=本文档旨在记录如何为AMD显卡（如Radeon RX 9070，代号gfx1201）在Windows平台上启用Ollama的GPU加速。由于Ollama官方版本自带的ROCm库通常不支持最新的显卡架构，导致其只能使用CPU进行低效推理。解决方案是从社区获取与特定显卡型号匹配的定制版ROCm库文件，并手动替换到Ollama的安装目录中。文档说明了从识别显卡代号、下载对应ROCm库、替换文件到验证加速效果的流程。成功配置后，计算任务将从CPU卸载至GPU，显著提升大语言模型的推理速度与效率。同时，文档还推荐了兼容Ollama的图形化客户端以供选用。"
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://blanktime.cn/2025/09/30/ollama/&title=ollama - 空白时间&summary=本文档旨在记录如何为AMD显卡（如Radeon RX 9070，代号gfx1201）在Windows平台上启用Ollama的GPU加速。由于Ollama官方版本自带的ROCm库通常不支持最新的显卡架构，导致其只能使用CPU进行低效推理。解决方案是从社区获取与特定显卡型号匹配的定制版ROCm库文件，并手动替换到Ollama的安装目录中。文档说明了从识别显卡代号、下载对应ROCm库、替换文件到验证加速效果的流程。成功配置后，计算任务将从CPU卸载至GPU，显著提升大语言模型的推理速度与效率。同时，文档还推荐了兼容Ollama的图形化客户端以供选用。"
           
           >
           
@@ -2866,7 +2866,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://111.229.219.141/2025/09/30/ollama/&title=ollama - 空白时间&summary=本文档旨在记录如何为AMD显卡（如Radeon RX 9070，代号gfx1201）在Windows平台上启用Ollama的GPU加速。由于Ollama官方版本自带的ROCm库通常不支持最新的显卡架构，导致其只能使用CPU进行低效推理。解决方案是从社区获取与特定显卡型号匹配的定制版ROCm库文件，并手动替换到Ollama的安装目录中。文档说明了从识别显卡代号、下载对应ROCm库、替换文件到验证加速效果的流程。成功配置后，计算任务将从CPU卸载至GPU，显著提升大语言模型的推理速度与效率。同时，文档还推荐了兼容Ollama的图形化客户端以供选用。"
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://blanktime.cn/2025/09/30/ollama/&title=ollama - 空白时间&summary=本文档旨在记录如何为AMD显卡（如Radeon RX 9070，代号gfx1201）在Windows平台上启用Ollama的GPU加速。由于Ollama官方版本自带的ROCm库通常不支持最新的显卡架构，导致其只能使用CPU进行低效推理。解决方案是从社区获取与特定显卡型号匹配的定制版ROCm库文件，并手动替换到Ollama的安装目录中。文档说明了从识别显卡代号、下载对应ROCm库、替换文件到验证加速效果的流程。成功配置后，计算任务将从CPU卸载至GPU，显著提升大语言模型的推理速度与效率。同时，文档还推荐了兼容Ollama的图形化客户端以供选用。"
           
           >
           
@@ -2880,7 +2880,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class='hoverbox'>
           <a class='share'><img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/wechat.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
           <div class='target'>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAAAAACi5bZQAAAC7UlEQVR42u3aQXKEMAwEQP7/6eQDofBYgkKkfUuKXeTey5Sk48f58xwIwIABAwYMmDEwx+Y5+/zlizef260nvg8YMGDAgAEDZhzMcgA6KeSqsKv3rf7/6oco3wcMGDBgwIABMxZm92Jd33f1fBXy8v1gwIABAwYMmH8Dc3eg2w2YYMCAAQMGDBgw1Yuufm410IEBAwYMGDBgwHQNqKoFdb3/dZNIMGDAgAEDBsxjMNUF6Lf93bYADQYMGDBgwIB5LUz1pItF6QV2G1vb9wEDBgwYMGDAjIFZbSBVg94uaNd7l+8JBgwYMGDAgBkH83RDqhrcdhtq8eIQGDBgwIABA+b1MLsDrOpFq42u3cUlMGDAgAEDBsz3YK4u2AVYbThVG2Gn3w8GDBgwYMCAGQdTXfjpLjBdXNoNeGDAgAEDBgyYuTBpQ6grCFYvni4KLX8fGDBgwIABA+ZzMNVglxbctVAd1w0GDBgwYMCAGQezG6TSAp8Kjqt1gAEDBgwYMGDmw1Rf0N2oSheJ0qAHBgwYMGDAgPkuTFegq0J2QS0/DwYMGDBgwIAZB3OEp9rI6h6stT0PBgwYMGDAgBkDkwa6uwJW2lBKf9Dl+sGAAQMGDBgw42BSkNVg9dQALq0HDBgwYMCAAfNdmN2FnDRgpcEvrTu+JxgwYMCAAQNmDEy1oBSmqzFWHdidfh4MGDBgwIABMw4mHVDdFbiqF6/WBwYMGDBgwICZA5Ne+K7C0sWhaqPs9HvBgAEDBgwYMGNgqueu4Nd18XhgBwYMGDBgwIAZA1MtJB2EdQ/s2n8YMGDAgAEDBsw4mK4FntXAVR34pYO7eHEIDBgwYMCAATMOJg1Qu6DVgFkNpHHAAwMGDBgwYMB8DiZd0EmhV4Nd1+ANDBgwYMCAAfN/YdIC7140ihtbYMCAAQMGDJixMNWGU1fwS2HbBnJgwIABAwYMmHEwdw2wuhd8uiEuAx4YMGDAgAED5rUwDhgwYMCAAQNm2PkFLXRdFSaNlCoAAAAASUVORK5CYII=">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAAAAACi5bZQAAAC/klEQVR42u3aS1LFMAwEwNz/0rCnoKKRHCqC9u594sSdjWqk68P6dl0IwIABAwYMmDUwV3OVb1S8/uv3d/e526d7HjBgwIABAwbMPpj0oCnEFPwU6O31YMCAAQMGDJi1MLcFUPh5CpoeeHweMGDAgAEDBgyYYXDVvR8YMGDAgAEDBkwKU/3+dCH4+gIPDBgwYMCAAfNrMN0gqBtcdeFf34kEAwYMGDBgwPwaTHtg+KWfjw1AgwEDBgwYMGBeCzNd1RtOg6p0//Z5wIABAwYMGDBrYLoF0qlA61SD79TzgwEDBgwYMGD2wKQHnDbanmrsHWvwgQEDBgwYMGDWwFQLoFMNt+5+3QAsLhDBgAEDBgwYMOtg0o2egqyCdF/oOMEDAwYMGDBgwLwGJgU4NSBUHUTqDiqlv4MBAwYMGDBg9sGcLqCqB57CVgvIuHAFAwYMGDBgwKyD6Taw0kbZqWBq+vxxww0MGDBgwIAB8zqY9MBPN9zSYOz44BEYMGDAgAEDZg1MNziq/j8txJ5quJULQDBgwIABAwbMGpjpgboDSN1AbNqIuy0IwYABAwYMGDBrYE4N/kwbX+n900ZduxMJBgwYMGDAgHktzLSQS69PD9gdQGo38MCAAQMGDBgwa2Cmja4UrAo6DpyaDTkwYMCAAQMGzF6Y6cbdACn9PgUtvygwYMCAAQMGzDqY9PMUZNro64LEnUgwYMCAAQMGzBqYaTA1LfDSRl13UOnH68CAAQMGDBgwa2G6gdU0UEoP3h0Mut0PDBgwYMCAAbMGZrrSQOpUMFUtFOMXCQYMGDBgwIBZA3M11zQgSgd7qs8zbhiCAQMGDBgwYNbBpAVdevBTwHEDLQ3ewIABAwYMGDBrYaYFVBpkpYNI3YZb+YWCAQMGDBgwYP4dTBpspf9LrwcDBgwYMGDAgJkWeNMA7FSAVQ62wIABAwYMGDBrYdIDdEGn+00HjsCAAQMGDBgwfwdm2riaFnZPBVzxCwEDBgwYMGDArIGxwIABAwYMGDDL1icvx2SdvPVengAAAABJRU5ErkJggg==">
           </div>
         </div>
       
@@ -3116,7 +3116,7 @@ Docker 部分启动服务器预先安装 Docker 引擎 并创建一个工作目�
     
       
         
-          <div><p><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/">豫ICP备2024099775号-1</a></p>
+          <div><p><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/">豫ICP备2024099775号-2</a></p>
 </div>
         
       
@@ -3766,7 +3766,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
       path = path.replaceAll('/index.html', '/').replaceAll('.html', '')
     }
 
-    volantis.artalk = Artalk.init(Object.assign({"server":"http://111.229.219.141:8080/","path":null,"placeholder":"你觉得怎么样呢？","visitor":true,"latex":false,"imageUploader":{"api":null,"token":null,"resp":null}}, {
+    volantis.artalk = Artalk.init(Object.assign({"server":"http://artalk.blanktime.cn","path":null,"placeholder":"你觉得怎么样呢？","visitor":true,"latex":false,"imageUploader":{"api":null,"token":null,"resp":null}}, {
       el: '#artalk_container',
       pageKey: path,
       pageTitle: document.title,
@@ -4062,7 +4062,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"空白时间","url":"http://111.229.219.141/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"η","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://111.229.219.141/","sameAs":["https://github.com/volantis-x"],"description":"空白时间"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://111.229.219.141/","name":"空白时间"}},{"@type":"ListItem","position":2,"item":{"@id":"http://111.229.219.141/categories/记录/","name":"记录"}},{"@type":"ListItem","position":3,"item":{"@id":"http://111.229.219.141/2025/09/30/ollama/","name":"ollama"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"空白时间","url":"http://111.229.219.141/","keywords":null,"description":"空白时间","author":{"@type":"Person","name":"η","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://111.229.219.141/","description":"空白时间"},"publisher":{"@type":"Organization","name":"空白时间","url":"http://111.229.219.141/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://111.229.219.141?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"ollama","description":"本文档旨在记录如何为AMD显卡（如Radeon RX 9070，代号gfx1201）在Windows平台上启用Ollama的GPU加速。由于Ollama官方版本自带的ROCm库通常不支持最新的显卡架构，导致其只能使用CPU进行低效推理。解决方案是从社区获取与特定显卡型号匹配的定制版ROCm库文件，并手动替换到Ollama的安装目录中。文档说明了从识别显卡代号、下载对应ROCm库、替换文件到验证加速效果的流程。成功配置后，计算任务将从CPU卸载至GPU，显著提升大语言模型的推理速度与效率。同时，文档还推荐了兼容Ollama的图形化客户端以供选用。","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://111.229.219.141/2025/09/30/ollama/"},"author":{"@type":"Person","name":"η","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://111.229.219.141/"},"publisher":{"@type":"Organization","name":"空白时间","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://111.229.219.141/2025/09/30/ollama/","wordCount":275,"datePublished":"2025-09-30T13:57:34.000Z","dateModified":"2025-10-03T13:54:17.572Z","articleSection":"记录","keywords":"ollama,amd ai","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"空白时间","url":"http://blanktime.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"η","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blanktime.cn/","sameAs":["https://github.com/volantis-x"],"description":"空白时间"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blanktime.cn/","name":"空白时间"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blanktime.cn/categories/记录/","name":"记录"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blanktime.cn/2025/09/30/ollama/","name":"ollama"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"空白时间","url":"http://blanktime.cn/","keywords":null,"description":"空白时间","author":{"@type":"Person","name":"η","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blanktime.cn/","description":"空白时间"},"publisher":{"@type":"Organization","name":"空白时间","url":"http://blanktime.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blanktime.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"ollama","description":"本文档旨在记录如何为AMD显卡（如Radeon RX 9070，代号gfx1201）在Windows平台上启用Ollama的GPU加速。由于Ollama官方版本自带的ROCm库通常不支持最新的显卡架构，导致其只能使用CPU进行低效推理。解决方案是从社区获取与特定显卡型号匹配的定制版ROCm库文件，并手动替换到Ollama的安装目录中。文档说明了从识别显卡代号、下载对应ROCm库、替换文件到验证加速效果的流程。成功配置后，计算任务将从CPU卸载至GPU，显著提升大语言模型的推理速度与效率。同时，文档还推荐了兼容Ollama的图形化客户端以供选用。","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blanktime.cn/2025/09/30/ollama/"},"author":{"@type":"Person","name":"η","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blanktime.cn/"},"publisher":{"@type":"Organization","name":"空白时间","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blanktime.cn/2025/09/30/ollama/","wordCount":275,"datePublished":"2025-09-30T13:57:34.000Z","dateModified":"2025-10-13T09:29:07.182Z","articleSection":"记录","keywords":"ollama,amd ai","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
