@@ -8,7 +8,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://blanktime.cn/2025/09/27/artalk评论系统/"/>
+  <link rel="canonical" href="https://blanktime.cn/2025/09/27/artalk评论系统/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -56,13 +56,13 @@
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="Artalk评论系统">
-<meta property="og:url" content="http://blanktime.cn/2025/09/27/Artalk%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/index.html">
+<meta property="og:url" content="https://blanktime.cn/2025/09/27/Artalk%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/index.html">
 <meta property="og:site_name" content="空白时间">
 <meta property="og:description" content="使用 Docker 部署 Artalk (Volantis主题)">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2025-09-27T09:53:59.000Z">
-<meta property="article:modified_time" content="2025-10-03T13:37:25.758Z">
+<meta property="article:modified_time" content="2025-10-14T09:37:10.598Z">
 <meta property="article:author" content="η">
 <meta property="article:tag" content="评论">
 <meta name="twitter:card" content="summary">
@@ -2191,7 +2191,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1760367358657),
+    lastupdate: new Date(1760436959677),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2588,7 +2588,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="https://schema.org.cn/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://blanktime.cn/2025/09/27/Artalk评论系统/">
+  <link itemprop="mainEntityOfPage" href="https://blanktime.cn/2025/09/27/Artalk评论系统/">
   <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
     <meta itemprop="name" content="空白时间">
   </span>
@@ -2680,7 +2680,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：147 字</p>
+      <p>字数：195 字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
@@ -2716,6 +2716,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <h2 id="Volantis-部分"><a href="#Volantis-部分" class="headerlink" title="Volantis 部分"></a>Volantis 部分</h2><p>修改配置文 <code>_config.volantis.yml</code></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">comments:</span><br><span class="line">  service: artalk</span><br><span class="line">  artalk:</span><br><span class="line">  	server: http://example.com:8080</span><br></pre></td></tr></table></figure>
 
+<h2 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令"></a>其他命令</h2><p>重启</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Docker Compose</span></span><br><span class="line">docker-compose restart</span><br><span class="line"></span><br><span class="line"><span class="comment"># Docker</span></span><br><span class="line">docker restart artalk</span><br></pre></td></tr></table></figure>
+
+<p>停止</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Docker Compose</span></span><br><span class="line">docker-compose stop</span><br><span class="line"></span><br><span class="line"><span class="comment"># Docker</span></span><br><span class="line">docker stop artalk</span><br></pre></td></tr></table></figure>
+
+<p>进入容器</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Docker Compose</span></span><br><span class="line">docker-compose <span class="built_in">exec</span> artalk bash</span><br><span class="line"></span><br><span class="line"><span class="comment"># Docker</span></span><br><span class="line">docker <span class="built_in">exec</span> -it artalk bash</span><br></pre></td></tr></table></figure>
+
+<p>删除</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Docker</span></span><br><span class="line">docker stop artalk</span><br><span class="line">docker <span class="built_in">rm</span> artalk</span><br></pre></td></tr></table></figure>
+
 
   </div>
   
@@ -2740,10 +2752,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-10-03T21:37:25+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-10-14T17:37:10+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2025年10月3日 21:37</p>
+    <p>更新于：2025年10月14日 17:37</p>
   </a>
 </div>
 
@@ -2769,7 +2781,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blanktime.cn/2025/09/27/Artalk%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/&title=Artalk评论系统 - 空白时间&summary=使用 Docker 部署 Artalk (Volantis主题)"
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blanktime.cn/2025/09/27/Artalk%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/&title=Artalk评论系统 - 空白时间&summary=使用 Docker 部署 Artalk (Volantis主题)"
           
           >
           
@@ -2781,7 +2793,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://blanktime.cn/2025/09/27/Artalk%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/&title=Artalk评论系统 - 空白时间&summary=使用 Docker 部署 Artalk (Volantis主题)"
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blanktime.cn/2025/09/27/Artalk%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/&title=Artalk评论系统 - 空白时间&summary=使用 Docker 部署 Artalk (Volantis主题)"
           
           >
           
@@ -2793,7 +2805,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://blanktime.cn/2025/09/27/Artalk%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/&title=Artalk评论系统 - 空白时间&summary=使用 Docker 部署 Artalk (Volantis主题)"
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://blanktime.cn/2025/09/27/Artalk%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/&title=Artalk评论系统 - 空白时间&summary=使用 Docker 部署 Artalk (Volantis主题)"
           
           >
           
@@ -2807,7 +2819,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class='hoverbox'>
           <a class='share'><img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/wechat.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
           <div class='target'>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATgAAAE4CAAAAADqFLC2AAADn0lEQVR42u3aQXLjMAwEQP//08kDtlImBmAEZ5s3x7IkNHOYAvj6sqL1QgAOHDhwFjhwS+Be4frp9/886M311e9Pn/tj4d16wYEDBw4cOHDglsFVH5zCnBZSLTR933K94MCBAwcOHDhwS+FOC5mGPv19F7RbLzhw4MCBAwcO3F+B6wbXtEF6+nxw4MCBAwcOHDhwtUDaLfS08LQxCg4cOHDgwIED99fgqo3JqYN+6X26A+rHJvngwIEDBw4cOHBDcN2G46d9jusFBw4cOHDgwIFbAtddafBMB9K3A+/besGBAwcOHDhw4JbAPfXC1eCZ3qfaiH3rAA4cOHDgwIEDtwRuamA7XUA1IKfQ1fuBAwcOHDhw4MBtgZs+yFf9+/SGdRuo5UYmOHDgwIEDBw7cQ3DVBt/0gLk64E7v260XHDhw4MCBAwduG9x0gEwP8nVBusH8+D7gwIEDBw4cOHBL4NKB8NSqbsDUgcW4EQoOHDhw4MCBA7cMrhqA0wbhVOG3Ava1DjA4cODAgQMHDtwwXBdiqvE43ei89X7gwIEDBw4cOHBb4NIBdDVQdoGqz6k2Ro8DOjhw4MCBAwcO3DK4tGFYhe7CV79PG63HARgcOHDgwIEDB24pXDcQdxuLKUi6QeVGJjhw4MCBAwcO3ENwaQMwDajHg9+pxmPxuW9/Bw4cOHDgwIED96Fw1QK7Dc40uE4NyscCMDhw4MCBAwcO3DBctdDTAXU32N4qvPoPcHywEBw4cODAgQMH7iG4dEDdDcrp9ylk933AgQMHDhw4cOC2wZUHs80DelNg7QFztTEKDhw4cODAgQO3DC6+UTMoTzdO08H0cSMWHDhw4MCBAwduGVw6kO5eNwX5a4NwcODAgQMHDhy4pXBPDZa7z+0G7OMNBQcOHDhw4MCBWwJXDZanA+DT4JsG5u6gO95ocODAgQMHDhy4JXC3C60e7Es3Lr3uFBgcOHDgwIEDB247XHWljc12AYeNz27jFRw4cODAgQMHbivcK1zpC98O1unn43rBgQMHDhw4cOCWwU0Hz2rhU43PXw/A4MCBAwcOHDhwS+CmBsvVwlPg7uAaHDhw4MCBAwfuf4W7dV11cH3rwONxIxMcOHDgwIEDB+5D4aYOIKYB+1awvh6AwYEDBw4cOHDghuC6AN3gOtWwrG7Y8fXgwIEDBw4cOHDL4KqrCtSFn9rQdIANDhw4cODAgQO3Dc6qLXDgwIEDZ4ED9/D6Bgba+2JC576aAAAAAElFTkSuQmCC">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVgAAAFYCAAAAAAzB7ucAAAEWklEQVR42u3awXHDMAwEQPffdFKBR8QBguxk+XOsUOTSD/AGrx/jlvFCABasARYsWAPsCuwrHG8nLj7fXUd3fVPrAAsWLFiwYMGCBfsM7HEBPPx8FSQ9mHfzXH2u7g8sWLBgwYIFCxbsM7DpwrYvBJcbLD4/5gEWLFiwYMGCBQv2T8B2A+lq4V5dP1iwYMGCBQsWLNj/DTsVcE8fUPp+sGDBggULFixYsN8FW25QCGHSxo2pAP2uhhSwYMGCBQsWLFiwu7Bpw8Rf/Rx7gAULFixYsGDBgl2B7Y40mK4G5NULRDeojz3AggULFixYsGDBrsBOgaTQ1YaMbkF/e1AOFixYsGDBggULdgW2OvFdF4dq48RpoZ8ecPz/YMGCBQsWLFiwYFdguy+qQqRB81Qw3oUrB91gwYIFCxYsWLBgV2BPGyRONzTVIDHdaJEG75duYMGCBQsWLFiwYFdgTwvrbuGdFuDdebrrLc8DFixYsGDBggULdhW22nDb/b67walgPF3f2+fBggULFixYsGDBrsCmDQ3VADkNvqsHN3WgcWMJWLBgwYIFCxYs2FXYdGEp4HQjyGkBnx7YcSMIWLBgwYIFCxYs2FXY0+B4OphOIaYvHt2DBwsWLFiwYMGCBfsZsNNB8Sn81EVg+uJzvH6wYMGCBQsWLFiwq7BXG0z/nl4EugeYBtan73v7XrBgwYIFCxYsWLArsGONCsNBdDd4714Q0oAfLFiwYMGCBQsW7C7s9AUgbeSYOqD0QlA9WLBgwYIFCxYsWLDPwHYbMqobn9rw66aRXkDAggULFixYsGDB7sJWg970INKCfKphYypIv/w/sGDBggULFixYsI/ApoV82jjRnb8auFcD+7IHWLBgwYIFCxYs2FXYqUC429hb3VC3saN7UGDBggULFixYsGCfgZ0KpNP5qo0S1SB66gdyvE6wYMGCBQsWLFiwK7Dd4DptsEgPoAqZNoTE6wQLFixYsGDBggW7CtttbOg2VlQPqAqVBvrlfYEFCxYsWLBgwYJdge0W8FMNGz9DYypQT/cJFixYsGDBggUL9jNhTwPhauPFVjDenQcsWLBgwYIFCxbsZ8OmhXX3wFKALnQa7JeDbrBgwYIFCxYsWLCPwKYNG1OFedqgMX2heHuwYMGCBQsWLFiwYB+B7TY0VAv/u+arNnhUB1iwYMGCBQsWLNhnYbsjPYBqMJ4G3N2DqH4PFixYsGDBggULdgd2qkC+O8juBu7dYPw4MAcLFixYsGDBggW7Clu9EHQL+btG92IzfkEACxYsWLBgwYIFuwJ7teBuY8Vxod18Ln2+u3+wYMGCBQsWLFiw3wXbXXAaRE9fdNo/ILBgwYIFCxYsWLBfBVsNtu/a4On7qj+E4wMDCxYsWLBgwYIF+whstbC+u8DfCt5P33+5XrBgwYIFCxYsWLCrsGmDb3rBmAqwpwL0LihYsGDBggULFizYXVhjdoAFC9YACxasAfbW8QuU3pUJnGfHwwAAAABJRU5ErkJggg==">
           </div>
         </div>
       
@@ -2836,7 +2848,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class='prev' href='/2025/09/30/ollama/'>
           <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>ollama</p>
-          <p class='content'>本文档旨在记录如何为AMD显卡（如Radeon RX 9070，代号gfx1201）在Windows平台上启用Ollama的GPU加速。由于Ollama官方版本自带的ROCm库通常不支持最新的显...</p>
+          <p class='content'>本文记录如何在 Windows 上为 AMD Radeon RX 9070（gfx1201）等新显卡启用 Ollama 的 GPU 加速：通过替换官方不支持新架构的 ROCm 库为社区提供的定制...</p>
         </a>
       
       
@@ -2949,7 +2961,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker-%E9%83%A8%E5%88%86"><span class="toc-text">Docker 部分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">启动服务器</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Volantis-%E9%83%A8%E5%88%86"><span class="toc-text">Volantis 部分</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker-%E9%83%A8%E5%88%86"><span class="toc-text">Docker 部分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">启动服务器</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Volantis-%E9%83%A8%E5%88%86"><span class="toc-text">Volantis 部分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4"><span class="toc-text">其他命令</span></a></li></ol>
   </div>
 </section>
 
@@ -3986,7 +3998,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"空白时间","url":"http://blanktime.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"η","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blanktime.cn/","sameAs":["https://github.com/volantis-x"],"description":"空白时间"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blanktime.cn/","name":"空白时间"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blanktime.cn/categories/记录/","name":"记录"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blanktime.cn/2025/09/27/Artalk评论系统/","name":"Artalk评论系统"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"空白时间","url":"http://blanktime.cn/","keywords":null,"description":"空白时间","author":{"@type":"Person","name":"η","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blanktime.cn/","description":"空白时间"},"publisher":{"@type":"Organization","name":"空白时间","url":"http://blanktime.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blanktime.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"Artalk评论系统","description":"使用 Docker 部署 Artalk (Volantis主题)","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blanktime.cn/2025/09/27/Artalk%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/"},"author":{"@type":"Person","name":"η","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blanktime.cn/"},"publisher":{"@type":"Organization","name":"空白时间","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blanktime.cn/2025/09/27/Artalk%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/","wordCount":32,"datePublished":"2025-09-27T09:53:59.000Z","dateModified":"2025-10-03T13:37:25.758Z","articleSection":"记录","keywords":"评论","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"空白时间","url":"https://blanktime.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"η","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blanktime.cn/","sameAs":["https://github.com/volantis-x"],"description":"空白时间"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blanktime.cn/","name":"空白时间"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blanktime.cn/categories/记录/","name":"记录"}},{"@type":"ListItem","position":3,"item":{"@id":"https://blanktime.cn/2025/09/27/Artalk评论系统/","name":"Artalk评论系统"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"空白时间","url":"https://blanktime.cn/","keywords":null,"description":"空白时间","author":{"@type":"Person","name":"η","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blanktime.cn/","description":"空白时间"},"publisher":{"@type":"Organization","name":"空白时间","url":"https://blanktime.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blanktime.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"Artalk评论系统","description":"使用 Docker 部署 Artalk (Volantis主题)","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://blanktime.cn/2025/09/27/Artalk%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/"},"author":{"@type":"Person","name":"η","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blanktime.cn/"},"publisher":{"@type":"Organization","name":"空白时间","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://blanktime.cn/2025/09/27/Artalk%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/","wordCount":32,"datePublished":"2025-09-27T09:53:59.000Z","dateModified":"2025-10-14T09:37:10.598Z","articleSection":"记录","keywords":"评论","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
