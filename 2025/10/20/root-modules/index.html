@@ -7,8 +7,8 @@
   <meta name="Volantis" content="6.0.0-alpha.1">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://blanktime.cn/tags/部署hexo/"/>
+  
+  <link rel="canonical" href="https://blanktime.cn/2025/10/20/root-modules/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -50,21 +50,23 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>标签：部署Hexo - 空白时间</title>
-  <meta name="keywords" content="空白时间,静默沉淀，向内而生,blanktime">
-  <meta desc name="description" content="好记性不如烂笔头，站内多用于记录一些心得、思考、分享、经验等。 - η - 空白时间">
+  <title>Root管理器与一些模块链接 - 空白时间</title>
+  <meta name="keywords" content="刷机,root,模块,空白时间,静默沉淀，向内而生,blanktime">
+  <meta desc name="description" content="本文汇总了Android系统核心管理工具与模块，主要包括：Root管理器（Magisk系列、KernelSU系列及其他内核级工具）、功能模块（Zygisk组件、LSPosed框架及用于隐藏环境和绕过检测的模块）以及实用应用程序（如Shizuku、隐藏应用列表等）。 - η - 空白时间">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="空白时间">
-<meta property="og:url" content="https://blanktime.cn/tags/%E9%83%A8%E7%BD%B2Hexo/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Root管理器与一些模块链接">
+<meta property="og:url" content="https://blanktime.cn/2025/10/20/root-modules/index.html">
 <meta property="og:site_name" content="空白时间">
-<meta property="og:description" content="好记性不如烂笔头，站内多用于记录一些心得、思考、分享、经验等。">
+<meta property="og:description" content="本文汇总了Android系统核心管理工具与模块，主要包括：Root管理器（Magisk系列、KernelSU系列及其他内核级工具）、功能模块（Zygisk组件、LSPosed框架及用于隐藏环境和绕过检测的模块）以及实用应用程序（如Shizuku、隐藏应用列表等）。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://blanktime.cn/images/logo/logo-192x192.png">
+<meta property="article:published_time" content="2025-10-19T20:07:06.000Z">
+<meta property="article:modified_time" content="2025-10-19T23:02:16.623Z">
 <meta property="article:author" content="η">
-<meta property="article:tag" content="空白时间">
-<meta property="article:tag" content="静默沉淀，向内而生">
-<meta property="article:tag" content="blanktime">
+<meta property="article:tag" content="刷机">
+<meta property="article:tag" content="root">
+<meta property="article:tag" content="模块">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://blanktime.cn/images/logo/logo-192x192.png">
   <style>
@@ -2183,7 +2185,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2586,25 +2588,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blanktime.cn/2025/09/23/Hexo/">
+  <article itemscope itemtype="https://schema.org.cn/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://blanktime.cn/2025/10/20/root-modules/">
   <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
     <meta itemprop="name" content="空白时间">
   </span>
@@ -2613,64 +2599,384 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="好记性不如烂笔头，站内多用于记录一些心得、思考、分享、经验等。">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="/images/logo/logo-500x500.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/09/23/Hexo/"  itemprop="url">
-        Hexo
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      <p>梦开始的地方，Hexo基础搭建</p>
+    
+      <h1 class="title" itemprop="name headline">
+        Root管理器与一些模块链接
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="https://schema.org.cn/Person">
+  <a itemprop="url" class='author' href="/about/" rel="nofollow">
+    <img itemprop="image" src="/images/icon/favicon-32.ico" class="lazyload" data-srcset="/images/icon/favicon-32.ico" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">η</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  
+  
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E9%93%BE%E6%8E%A5/">链接</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+        <a href="/categories/%E9%93%BE%E6%8E%A5/" itemprop="url"><span itemprop="name">链接</span></a>
+      </span>
     
   </div>
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-09-23T10:14:04+08:00">2025-09-23</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E8%AE%B0%E5%BD%95/">记录</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
-              <a href="/categories/%E8%AE%B0%E5%BD%95/" itemprop="url"><span itemprop="name">记录</span></a>
-            </span>
+
+
+
           
         
-      </div>
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2025-10-20T04:07:06+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2025年10月20日 04:07</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
       
-        <div>
-          <a class='readmore' href='/2025/09/23/Hexo/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+      <span id="artalk_visitors" data-page-key="/2025/10/20/root-modules/">
+        <i class="fa-light fa-loader fa-spin fa-fw" aria-hidden="true"></i>
+      </span>
+        
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：259 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：1 分钟</p>
+    </a>
+  </div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p>本文汇总了Android系统核心管理工具与模块，主要包括：<strong>Root管理器</strong>（Magisk系列、KernelSU系列及其他内核级工具）、<strong>功能模块</strong>（Zygisk组件、LSPosed框架及用于隐藏环境和绕过检测的模块）以及<strong>实用应用程序</strong>（如Shizuku、隐藏应用列表等）。</p>
+<span id="more"></span>
+
+<div class="note warning"><p>Github链接直连访问较慢，或无法访问</p></div>
+
+<h2 id="Root管理器"><a href="#Root管理器" class="headerlink" title="Root管理器"></a><strong>Root管理器</strong></h2><h3 id="Magisk-系列"><a href="#Magisk-系列" class="headerlink" title="Magisk 系列"></a><strong>Magisk 系列</strong></h3><p><strong>Magisk</strong> 不必多说：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/topjohnwu/Magisk/releases"><img src="https://github-readme-stats.vercel.app/api/pin/?username=topjohnwu&repo=Magisk&theme=solarized-light&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=topjohnwu&repo=Magisk&theme=solarized-light&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>Magisk-alpha</strong> 分支：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/vvb2060/Magisk/releases"><img src="https://github-readme-stats.vercel.app/api/pin/?username=vvb2060&repo=Magisk&theme=solarized-light&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=vvb2060&repo=Magisk&theme=solarized-light&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>Kitsune Magisk</strong> 分支 狐狸面具（已停更）：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/1q23lyc45/KitsuneMagisk/releases"><img src="https://github-readme-stats.vercel.app/api/pin/?username=1q23lyc45&repo=KitsuneMagisk&theme=solarized-light&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=1q23lyc45&repo=KitsuneMagisk&theme=solarized-light&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+
+
+<h3 id="KernelSU-系列"><a href="#KernelSU-系列" class="headerlink" title="KernelSU 系列"></a><strong>KernelSU 系列</strong></h3><p><strong>KernelSU</strong> 基于内核的 Root 方案：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/tiann/KernelSU/releases"><img src="https://github-readme-stats.vercel.app/api/pin/?username=tiann&repo=KernelSU&theme=solarized-dark&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=tiann&repo=KernelSU&theme=solarized-dark&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>KernelSU-Next</strong>：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/KernelSU-Next/KernelSU-Next/releases"><img src="https://github-readme-stats.vercel.app/api/pin/?username=KernelSU-Next&repo=KernelSU-Next&theme=solarized-dark&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=KernelSU-Next&repo=KernelSU-Next&theme=solarized-dark&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<h4 id="其他内核级-Root-管理器"><a href="#其他内核级-Root-管理器" class="headerlink" title="其他内核级 Root 管理器"></a><strong>其他内核级 Root 管理器</strong></h4><p><strong>SukiSU-Ultra</strong></p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/SukiSU-Ultra/SukiSU-Ultra"><img src="https://github-readme-stats.vercel.app/api/pin/?username=SukiSU-Ultra&repo=SukiSU-Ultra&theme=solarized-dark&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=SukiSU-Ultra&repo=SukiSU-Ultra&theme=solarized-dark&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>Wild_KSU</strong></p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/WildKernels/Wild_KSU/releases"><img src="https://github-readme-stats.vercel.app/api/pin/?username=WildKernels&repo=Wild_KSU&theme=solarized-dark&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=WildKernels&repo=Wild_KSU&theme=solarized-dark&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<h3 id="APatch"><a href="#APatch" class="headerlink" title="APatch"></a><strong>APatch</strong></h3>  <a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/bmax121/APatch"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bmax121&repo=APatch&theme=vue&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=bmax121&repo=APatch&theme=vue&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<h2 id="模块（Zygisk-LSPosed）"><a href="#模块（Zygisk-LSPosed）" class="headerlink" title="模块（Zygisk &#x2F; LSPosed）"></a><strong>模块（Zygisk &#x2F; LSPosed）</strong></h2><h3 id="Zygisk-部分"><a href="#Zygisk-部分" class="headerlink" title="Zygisk 部分"></a><strong>Zygisk 部分</strong></h3><p><strong>ZygiskNext</strong>：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/Dr-TSNG/ZygiskNext"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Dr-TSNG&repo=ZygiskNext&theme=onedark&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=Dr-TSNG&repo=ZygiskNext&theme=onedark&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>NeoZygisk</strong>：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/JingMatrix/NeoZygisk"><img src="https://github-readme-stats.vercel.app/api/pin/?username=JingMatrix&repo=NeoZygisk&theme=onedark&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=JingMatrix&repo=NeoZygisk&theme=onedark&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>ReZygisk</strong>：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/PerformanC/ReZygisk"><img src="https://github-readme-stats.vercel.app/api/pin/?username=PerformanC&repo=ReZygisk&theme=onedark&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=PerformanC&repo=ReZygisk&theme=onedark&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+
+
+<h3 id="LSPosed-部分"><a href="#LSPosed-部分" class="headerlink" title="LSPosed 部分"></a><strong>LSPosed 部分</strong></h3><p><strong>LSPosed</strong>：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/LSPosed/LSPosed"><img src="https://github-readme-stats.vercel.app/api/pin/?username=LSPosed&repo=LSPosed&theme=buefy&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=LSPosed&repo=LSPosed&theme=buefy&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>LSPosed_mod</strong>：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/mywalkb/LSPosed_mod"><img src="https://github-readme-stats.vercel.app/api/pin/?username=mywalkb&repo=LSPosed_mod&theme=buefy&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=mywalkb&repo=LSPosed_mod&theme=buefy&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>LSPosed-Irena</strong>：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/re-zero001/LSPosed-Irena"><img src="https://github-readme-stats.vercel.app/api/pin/?username=re-zero001&repo=LSPosed-Irena&theme=buefy&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=re-zero001&repo=LSPosed-Irena&theme=buefy&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+
+
+<h3 id="其他模块"><a href="#其他模块" class="headerlink" title="其他模块"></a><strong>其他模块</strong></h3><p><strong>Shamiko</strong>（隐藏环境）：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/LSPosed/LSPosed.github.io/releases"><img src="https://github-readme-stats.vercel.app/api/pin/?username=LSPosed&repo=LSPosed.github.io&theme=calm&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=LSPosed&repo=LSPosed.github.io&theme=calm&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>PlayIntegrityFix</strong>（绕过 Google Play 完整性检测）：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/KOWX712/PlayIntegrityFix"><img src="https://github-readme-stats.vercel.app/api/pin/?username=KOWX712&repo=PlayIntegrityFix&theme=calm&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=KOWX712&repo=PlayIntegrityFix&theme=calm&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>TrickyStore</strong>（TEE损坏）：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/5ec1cff/TrickyStore"><img src="https://github-readme-stats.vercel.app/api/pin/?username=5ec1cff&repo=TrickyStore&theme=calm&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=5ec1cff&repo=TrickyStore&theme=calm&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>Tricky-Addon</strong>（配置TrickyStore）：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/KOWX712/Tricky-Addon-Update-Target-List"><img src="https://github-readme-stats.vercel.app/api/pin/?username=KOWX712&repo=Tricky-Addon-Update-Target-List&theme=calm&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=KOWX712&repo=Tricky-Addon-Update-Target-List&theme=calm&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>TrickyStoreOSS</strong>：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/beakthoven/TrickyStoreOSS"><img src="https://github-readme-stats.vercel.app/api/pin/?username=beakthoven&repo=TrickyStoreOSS&theme=calm&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=beakthoven&repo=TrickyStoreOSS&theme=calm&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>TS-Enhancer-Extreme</strong>：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/TheGeniusClub/TS-Enhancer-Extreme"><img src="https://github-readme-stats.vercel.app/api/pin/?username=TheGeniusClub&repo=TS-Enhancer-Extreme&theme=calm&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=TheGeniusClub&repo=TS-Enhancer-Extreme&theme=calm&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>susfs4ksu-module</strong>：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/sidex15/susfs4ksu-module"><img src="https://github-readme-stats.vercel.app/api/pin/?username=sidex15&repo=susfs4ksu-module&theme=calm&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=sidex15&repo=susfs4ksu-module&theme=calm&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>ZN-AuditPatch</strong>：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/aviraxp/ZN-AuditPatch"><img src="https://github-readme-stats.vercel.app/api/pin/?username=aviraxp&repo=ZN-AuditPatch&theme=calm&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=aviraxp&repo=ZN-AuditPatch&theme=calm&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>AsoulOpt</strong>：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/nakixii/Magisk_AsoulOpt"><img src="https://github-readme-stats.vercel.app/api/pin/?username=nakixii&repo=Magisk_AsoulOpt&theme=calm&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=nakixii&repo=Magisk_AsoulOpt&theme=calm&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<h2 id="App"><a href="#App" class="headerlink" title="App"></a><strong>App</strong></h2><p><strong>Iconify</strong> 免费和开源的 Android 定制器应用程序：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/Mahmud0808/Iconify/releases"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Mahmud0808&repo=Iconify&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=Mahmud0808&repo=Iconify&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>FingerprintPay</strong> 指纹支付：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/eritpchy/FingerprintPay"><img src="https://github-readme-stats.vercel.app/api/pin/?username=eritpchy&repo=FingerprintPay&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=eritpchy&repo=FingerprintPay&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>核心破解</strong>：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/LSPosed/CorePatch/releases"><img src="https://github-readme-stats.vercel.app/api/pin/?username=LSPosed&repo=CorePatch&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=LSPosed&repo=CorePatch&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>Shizuku</strong> 无Root的部分操作：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/RikkaApps/Shizuku/releases"><img src="https://github-readme-stats.vercel.app/api/pin/?username=RikkaApps&repo=Shizuku&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=RikkaApps&repo=Shizuku&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>隐藏应用列表</strong>：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/Xposed-Modules-Repo/com.tsng.hidemyapplist"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Xposed-Modules-Repo&repo=com.tsng.hidemyapplist&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=Xposed-Modules-Repo&repo=com.tsng.hidemyapplist&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>Android-DataBackup</strong> 安卓数据备份工具：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/XayahSuSuSu/Android-DataBackup"><img src="https://github-readme-stats.vercel.app/api/pin/?username=XayahSuSuSu&repo=Android-DataBackup&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=XayahSuSuSu&repo=Android-DataBackup&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>HyperCeiler</strong>：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/ReChronoRain/HyperCeiler"><img src="https://github-readme-stats.vercel.app/api/pin/?username=ReChronoRain&repo=HyperCeiler&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=ReChronoRain&repo=HyperCeiler&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>Cemiuiler</strong>：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/ReChronoRain/Cemiuiler"><img src="https://github-readme-stats.vercel.app/api/pin/?username=ReChronoRain&repo=Cemiuiler&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=ReChronoRain&repo=Cemiuiler&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>LuckyTool</strong>：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/Xposed-Modules-Repo/com.luckyzyx.luckytool/tree/19350-1.3.1"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Xposed-Modules-Repo&repo=com.luckyzyx.luckytool&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=Xposed-Modules-Repo&repo=com.luckyzyx.luckytool&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>HMA-OSS</strong>：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/frknkrc44/HMA-OSS"><img src="https://github-readme-stats.vercel.app/api/pin/?username=frknkrc44&repo=HMA-OSS&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=frknkrc44&repo=HMA-OSS&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>Dhizuku</strong>：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/iamr0s/Dhizuku"><img src="https://github-readme-stats.vercel.app/api/pin/?username=iamr0s&repo=Dhizuku&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=iamr0s&repo=Dhizuku&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+<p><strong>InstallerX-Revived</strong>：</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/wxxsfxyzm/InstallerX-Revived"><img src="https://github-readme-stats.vercel.app/api/pin/?username=wxxsfxyzm&repo=InstallerX-Revived&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=wxxsfxyzm&repo=InstallerX-Revived&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-10-20T07:02:16+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2025年10月20日 07:02</p>
+  </a>
 </div>
 
-          </div>
         
       
-    
-  </section>
+        
+          
   
-    
+  
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%88%B7%E6%9C%BA/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>刷机</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/root/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>root</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%A8%A1%E5%9D%97/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>模块</p></a></div>
+  <span hidden itemprop="keywords">刷机 root 模块</span>
   
 
 
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blanktime.cn/2025/10/20/root-modules/&title=Root管理器与一些模块链接 - 空白时间&summary=本文汇总了Android系统核心管理工具与模块，主要包括：Root管理器（Magisk系列、KernelSU系列及其他内核级工具）、功能模块（Zygisk组件、LSPosed框架及用于隐藏环境和绕过检测的模块）以及实用应用程序（如Shizuku、隐藏应用列表等）。"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blanktime.cn/2025/10/20/root-modules/&title=Root管理器与一些模块链接 - 空白时间&summary=本文汇总了Android系统核心管理工具与模块，主要包括：Root管理器（Magisk系列、KernelSU系列及其他内核级工具）、功能模块（Zygisk组件、LSPosed框架及用于隐藏环境和绕过检测的模块）以及实用应用程序（如Shizuku、隐藏应用列表等）。"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://blanktime.cn/2025/10/20/root-modules/&title=Root管理器与一些模块链接 - 空白时间&summary=本文汇总了Android系统核心管理工具与模块，主要包括：Root管理器（Magisk系列、KernelSU系列及其他内核级工具）、功能模块（Zygisk组件、LSPosed框架及用于隐藏环境和绕过检测的模块）以及实用应用程序（如Shizuku、隐藏应用列表等）。"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        
+        <div class='hoverbox'>
+          <a class='share'><img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/wechat.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
+          <div class='target'>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAAAAACi5bZQAAAC+klEQVR42u3aS3LbQAwFQN3/0skBEhUHeKBMyD07WR8O2ptXAF5/nP+eFwIwYMCAAQNmDcyref75wcO/v/tc9fdO36/WAwYMGDBgwIDZB3McgC4+fwpxVWAXNq0HDBgwYMCAAbMX5jIAhYWfvm4HtLQeMGDAgAEDBsyvh0kbU1fPBwMGDBgwYMCAmYY5/X71/SocGDBgwIABA+b3wUwHsWoQnB7Q/dgkEgwYMGDAgAHzMZjpAddPv27XAwYMGDBgwIBZA5OeaqBKF6arga98HzBgwIABAwbMGphuQEobWVeNqCrQ2P3BgAEDBgwYMGtgphpCpwGtW/BpsIwXjcCAAQMGDBgwa2HSAVY1eKUNsfQexwEPDBgwYMCAAfM4mHTg1W08db/fDXDlgAcGDBgwYMCAeTxMOhhL359qeE0FSjBgwIABAwbMHphqYypd4EkbT9UgWh4YggEDBgwYMGDWwFTPpxpOpwVPLyaBAQMGDBgwYL4H5vRCdzWiqoEvbViBAQMGDBgwYPbAVAs7HlwNB79yw6k4QAQDBgwYMGDA7IPpPrg7WEsLTheLLu8LBgwYMGDAgFkDM7UgVB2EtQPYzcEPDBgwYMCAAbMP5u5GU3fg1r3nq3jAgAEDBgwYMPthTgs8HbxVB3LpolJaBxgwYMCAAQNmP0z1QukAbKqB1Q2CYMCAAQMGDJjvg5kewFUHc90GVntwBwYMGDBgwIBZC5M2nu6CnQp+8SQSDBgwYMCAAfNYmOqDT6G6Cz7pQlB5EQkMGDBgwIABswZmOth1B2npQK/boHob8MCAAQMGDBgwj4dJg9J0sJv6B7QDLBgwYMCAAQNmHUw10J0O2tKC7/p9MGDAgAEDBsz3wUwHqPbgq/j8NJiCAQMGDBgwYMCkwS9dJOoGSDBgwIABAwYMmO6F00Fbd0HpMQEPDBgwYMCAAfPx/ZipBZ+pRaTTASEYMGDAgAED5ntg0gWe9ILlwVgI//aeYMCAAQMGDJg1MA4YMGDAgAEDZtn5C8Y8ZJ3eW2qfAAAAAElFTkSuQmCC">
+          </div>
+        </div>
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2025/10/15/Redmi-k40/'>
+          <p class='title'>Redmi k40(alioth)刷入 Pixel OS<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>本人手中的 Redmi k40 已吃灰良久，目前系统为 Paranoid Android，版本为Android 13。
+本次刷入为：PixelOS最新版（截止2025.10.15）
+
+
+准备工作...</p>
+        </a>
+      
+    </div>
+  
+  <!-- 文章推荐 -->
+  
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2025/10/20/root-modules/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="https://schema.org.cn/WPSideBar">
   
@@ -2679,71 +2985,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile ">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://cos.blanktime.cn/assets/images/icon/favicon-128.ico'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>η</h2>
-        
-        
-        
-          <p><span id="jinrishici-sentence">空白时间</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="https://space.bilibili.com/289261493"
-              class="social fa-brands fa-bilibili flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:fhyx06@qq.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/fhyx06"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://music.163.com/#/playlist?id=14326234190"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
     
   
 
@@ -2785,183 +3026,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   
 
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Scrcpy/" style="font-size: 14px; color: #999">Scrcpy</a> <a href="/tags/amd-ai/" style="font-size: 14px; color: #999">amd ai</a> <a href="/tags/markdown/" style="font-size: 14px; color: #999">markdown</a> <a href="/tags/ollama/" style="font-size: 14px; color: #999">ollama</a> <a href="/tags/root/" style="font-size: 14px; color: #999">root</a> <a href="/tags/%E5%88%B7%E6%9C%BA/" style="font-size: 24px; color: #555">刷机</a> <a href="/tags/%E6%A8%A1%E5%9D%97/" style="font-size: 14px; color: #999">模块</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 14px; color: #999">测试</a> <a href="/tags/%E8%AF%84%E8%AE%BA/" style="font-size: 14px; color: #999">评论</a> <a href="/tags/%E8%AF%BE%E6%96%87%E3%80%8A%E5%81%B7%E8%A2%AD%E3%80%8B/" style="font-size: 14px; color: #999">课文《偷袭》</a> <a href="/tags/%E8%AF%BE%E6%96%87%E3%80%8A%E6%BD%98%E5%98%8E%E4%B9%8B%E4%BA%A4%E3%80%8B/" style="font-size: 14px; color: #999">课文《潘嘎之交》</a> <a href="/tags/%E9%83%A8%E7%BD%B2/" style="font-size: 14px; color: #999">部署</a> <a href="/tags/%E9%83%A8%E7%BD%B2Hexo/" style="font-size: 14px; color: #999">部署Hexo</a>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget desktop">
-  
-  <header>
-    
-      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>11 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count"></div>
-        </div>
-      
-
-
-      
-        <div class="webinfo-item">
-          <div>本站总字数：</div>
-          <div>6.5k 字</div>
-        </div>
-      
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          <div id="last-update-show">2025-10-20 日</div>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-
-<section class="widget desktop mobile">
-  
-  <header>
-    
-      <i class="fa-solid fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2025/10/20/root-modules/"><div class="item"><time>2025-10-20</time><span>链接</span></div><span>Root管理器与一些模块链接</span></a></li><li><a class="widget-last" href="/2025/10/15/Redmi-k40/"><div class="item"><time>2025-10-20</time><span>记录</span></div><span>Redmi k40(alioth)刷入 Pixel OS</span></a></li><li><a class="widget-last" href="/2025/09/22/Scrcpy_new/"><div class="item"><time>2025-10-19</time><span>工具</span></div><span>Scrcpy</span></a></li><li><a class="widget-last" href="/2025/09/27/Artalk%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/"><div class="item"><time>2025-10-14</time><span>记录</span></div><span>Artalk评论系统</span></a></li><li><a class="widget-last" href="/2025/09/30/ollama/"><div class="item"><time>2025-10-14</time><span>记录</span></div><span>ollama</span></a></li></ul>
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget grid desktop mobile">
-  
-  <header>
-    
-      <a href='mailto:fhyx06@qq.com'><i class="fas fa-headset fa-fw" aria-hidden="true"></i><span class='name'>联系我(也可扫下方二维码)</span></a>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="grid navigation fixed">
-      
-        <a class="flat-box" href="mailto:fhyx06@qq.com"
-          
-          
-          active-action="action-mailto:fhyx06@qqcom">
-          
-            <i class="fas fa-bug fa-fw" aria-hidden="true"></i>
-          
-          反馈BUG
-        </a>
-      
-        <a class="flat-box" href="mailto:fhyx06@qq.com"
-          
-          
-          active-action="action-mailto:fhyx06@qqcom">
-          
-            <i class="fas fa-question-circle fa-fw" aria-hidden="true"></i>
-          
-          疑问求助
-        </a>
-      
-        <a class="flat-box" href="mailto:fhyx06@qq.com"
-          
-          
-          active-action="action-mailto:fhyx06@qqcom">
-          
-            <i class="fas fa-lightbulb fa-fw" aria-hidden="true"></i>
-          
-          提个建议
-        </a>
-      
-    </div>
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget qrcode desktop mobile">
-  
-
-  <div class='content article-entry'>
-    
-      <img src='https://cos.blanktime.cn/assets/images/wx-qr.png'
-      
-        height='64px'
-      />
-    
-      <img src='https://cos.blanktime.cn/assets/images/qq-qr.png'
-      
-        height='64px'
-      />
-    
-  </div>
-</section>
-
-    
-  
-
 
 <div class="widget-sticky">
+
+  
+  
+
+
+<section class="widget toc-wrapper desktop mobile" id="toc-div" >
+  
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+  <div class='content'>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Root%E7%AE%A1%E7%90%86%E5%99%A8"><span class="toc-text">Root管理器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Magisk-%E7%B3%BB%E5%88%97"><span class="toc-text">Magisk 系列</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#KernelSU-%E7%B3%BB%E5%88%97"><span class="toc-text">KernelSU 系列</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E5%86%85%E6%A0%B8%E7%BA%A7-Root-%E7%AE%A1%E7%90%86%E5%99%A8"><span class="toc-text">其他内核级 Root 管理器</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#APatch"><span class="toc-text">APatch</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A8%A1%E5%9D%97%EF%BC%88Zygisk-LSPosed%EF%BC%89"><span class="toc-text">模块（Zygisk &#x2F; LSPosed）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Zygisk-%E9%83%A8%E5%88%86"><span class="toc-text">Zygisk 部分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#LSPosed-%E9%83%A8%E5%88%86"><span class="toc-text">LSPosed 部分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E6%A8%A1%E5%9D%97"><span class="toc-text">其他模块</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#App"><span class="toc-text">App</span></a></li></ol>
+  </div>
+</section>
+
+  
 
 </div>
 
@@ -2969,6 +3055,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <!-- Custom Files side end -->
 </aside>
+
 
 
         </div>
@@ -3593,6 +3680,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   
+  
     <script>
   volantis.css("https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css");
 
@@ -3671,7 +3759,6 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
     
-  
   
 
 
@@ -3862,6 +3949,60 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
+        <script>
+  // https://github.com/theme-next/hexo-theme-next/blob/master/layout/_third-party/math/mathjax.swig
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = "https://unpkg.com/mathjax@3.2.2/es5/tex-mml-chtml.js";
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    // 文章章节标题不能为 “MathJax” ，否则会报错。
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typesetPromise();
+  }
+</script>
+
+
+
 
 <script>
   function listenSidebarTOC() {
@@ -3996,7 +4137,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"空白时间","url":"https://blanktime.cn/","logo":{"@type":"ImageObject","url":"/images/logo/logo-500x500.png","width":500,"height":500}},{"@context":"https://schema.org.cn","@type":"Person","name":"η","image":{"@type":"ImageObject","url":"/images/logo/logo-500x500.png"},"url":"https://blanktime.cn/","sameAs":["https://github.com/fhyx06"],"description":"好记性不如烂笔头，站内多用于记录一些心得、思考、分享、经验等。"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blanktime.cn/","name":"空白时间"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blanktime.cn/tags/部署Hexo/","name":"部署Hexo"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"空白时间","url":"https://blanktime.cn/","keywords":["空白时间","静默沉淀，向内而生","blanktime"],"description":"好记性不如烂笔头，站内多用于记录一些心得、思考、分享、经验等。","author":{"@type":"Person","name":"η","image":{"@type":"ImageObject","url":"/images/logo/logo-500x500.png"},"url":"https://blanktime.cn/","description":"好记性不如烂笔头，站内多用于记录一些心得、思考、分享、经验等。"},"publisher":{"@type":"Organization","name":"空白时间","url":"https://blanktime.cn/","logo":{"@type":"ImageObject","url":"/images/logo/logo-500x500.png","width":500,"height":500}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blanktime.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","description":"好记性不如烂笔头，站内多用于记录一些心得、思考、分享、经验等。","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"η","image":{"@type":"ImageObject","url":"/images/logo/logo-500x500.png"},"url":"https://blanktime.cn/"},"publisher":{"@type":"Organization","name":"空白时间","logo":{"@type":"ImageObject","url":"/images/logo/logo-500x500.png","width":500,"height":500}},"wordCount":0,"image":{"@type":"ImageObject","url":"/images/logo/logo-500x500.png","width":500,"height":500}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"空白时间","url":"https://blanktime.cn/","logo":{"@type":"ImageObject","url":"/images/logo/logo-500x500.png","width":500,"height":500}},{"@context":"https://schema.org.cn","@type":"Person","name":"η","image":{"@type":"ImageObject","url":"/images/logo/logo-500x500.png"},"url":"https://blanktime.cn/","sameAs":["https://github.com/fhyx06"],"description":"好记性不如烂笔头，站内多用于记录一些心得、思考、分享、经验等。"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blanktime.cn/","name":"空白时间"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blanktime.cn/categories/链接/","name":"链接"}},{"@type":"ListItem","position":3,"item":{"@id":"https://blanktime.cn/2025/10/20/root-modules/","name":"Root管理器与一些模块链接"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"空白时间","url":"https://blanktime.cn/","keywords":["空白时间","静默沉淀，向内而生","blanktime"],"description":"好记性不如烂笔头，站内多用于记录一些心得、思考、分享、经验等。","author":{"@type":"Person","name":"η","image":{"@type":"ImageObject","url":"/images/logo/logo-500x500.png"},"url":"https://blanktime.cn/","description":"好记性不如烂笔头，站内多用于记录一些心得、思考、分享、经验等。"},"publisher":{"@type":"Organization","name":"空白时间","url":"https://blanktime.cn/","logo":{"@type":"ImageObject","url":"/images/logo/logo-500x500.png","width":500,"height":500}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blanktime.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"Root管理器与一些模块链接","description":"本文汇总了Android系统核心管理工具与模块，主要包括：Root管理器（Magisk系列、KernelSU系列及其他内核级工具）、功能模块（Zygisk组件、LSPosed框架及用于隐藏环境和绕过检测的模块）以及实用应用程序（如Shizuku、隐藏应用列表等）。","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://blanktime.cn/2025/10/20/root-modules/"},"author":{"@type":"Person","name":"η","image":{"@type":"ImageObject","url":"/images/logo/logo-500x500.png"},"url":"https://blanktime.cn/"},"publisher":{"@type":"Organization","name":"空白时间","logo":{"@type":"ImageObject","url":"/images/logo/logo-500x500.png","width":500,"height":500}},"url":"https://blanktime.cn/2025/10/20/root-modules/","wordCount":132,"datePublished":"2025-10-19T20:07:06.000Z","dateModified":"2025-10-19T23:02:16.623Z","articleSection":"链接","keywords":"刷机,root,模块","image":{"@type":"ImageObject","url":"/images/logo/logo-500x500.png","width":500,"height":500}}]</script>
 
 
 
