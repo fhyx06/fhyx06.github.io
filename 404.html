@@ -2193,7 +2193,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1770175006273),
+    lastupdate: new Date(1770179821383),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -3831,10 +3831,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     if(!document.querySelectorAll("#artalk_container")[0])return;
     volantis.css("https://unpkg.com/artalk@2.9.1/dist/Artalk.css");
     
-    volantis.css("https://unpkg.com/katex@0.16.11/dist/katex.min.css");
-    volantis.js("https://unpkg.com/katex@0.16.11/dist/katex.min.js");
-    volantis.js("https://unpkg.com/artalk@2.9.1/dist/Artalk.js");
-    volantis.js("https://unpkg.com/@artalk/plugin-katex@0.2.4/dist/artalk-plugin-katex.js").then(p_artalk);
+    volantis.js("https://unpkg.com/artalk@2.9.1/dist/Artalk.js").then(p_artalk);
     
   }
 
@@ -3849,7 +3846,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
       path = path.replaceAll('/index.html', '/').replaceAll('.html', '')
     }
 
-    volantis.artalk = Artalk.init(Object.assign({"server":"https://artalk.blanktime.cn","path":null,"placeholder":"你觉得怎么样呢？","visitor":true,"latex":true,"imageUploader":{"api":null,"token":null,"resp":null}}, {
+    volantis.artalk = Artalk.init(Object.assign({"server":"https://artalk.blanktime.cn","path":null,"placeholder":"你觉得怎么样呢？","visitor":true,"latex":false,"imageUploader":{"api":null,"token":null,"resp":null}}, {
       el: '#artalk_container',
       pageKey: path,
       pageTitle: document.title,
