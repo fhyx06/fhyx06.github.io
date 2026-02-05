@@ -53,17 +53,17 @@
   <title>Redmi k40(alioth)刷入 Pixel OS - 空白时间</title>
   <meta name="keywords" content="红米K40刷入Pixel OS,空白时间,静默沉淀，向内而生,blanktime">
   <meta desc name="description" content="本人手中的 Redmi k40 已吃灰良久，目前系统为 Paranoid Android，版本为Android 13。
-本次刷入为：PixelOS最新版（截止2025.10.15） - η - 空白时间">
+本次刷入为：PixelOS  最新版（截止2025.10.15） - η - 空白时间">
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="Redmi k40(alioth)刷入 Pixel OS">
 <meta property="og:url" content="https://blog.blanktime.cn/2025/10/15/Redmi-k40/index.html">
 <meta property="og:site_name" content="空白时间">
-<meta property="og:description" content="本人手中的 Redmi k40 已吃灰良久，目前系统为 Paranoid Android，版本为Android 13。 本次刷入为：PixelOS最新版（截止2025.10.15）">
+<meta property="og:description" content="本人手中的 Redmi k40 已吃灰良久，目前系统为 Paranoid Android，版本为Android 13。 本次刷入为：PixelOS  最新版（截止2025.10.15）">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://blog.blanktime.cn/images/logo/logo-192x192.png">
 <meta property="article:published_time" content="2025-10-15T12:12:27.000Z">
-<meta property="article:modified_time" content="2026-02-04T05:58:39.572Z">
+<meta property="article:modified_time" content="2026-02-05T10:24:19.628Z">
 <meta property="article:author" content="η">
 <meta property="article:tag" content="刷机">
 <meta name="twitter:card" content="summary">
@@ -2192,7 +2192,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1770186044463),
+    lastupdate: new Date(1770292621081),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2683,7 +2683,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：903 字</p>
+      <p>字数：907 字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
@@ -2706,8 +2706,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>本人手中的 <strong>Redmi k40</strong> 已吃灰良久，目前系统为 <strong>Paranoid Android</strong>，版本为Android 13。</p>
-<p>本次刷入为：<strong>PixelOS</strong>最新版（截止2025.10.15）</p>
+    <p>本人手中的 <strong>Redmi k40</strong> 已吃灰良久，目前系统为 <a target="_blank" rel="noopener" href="https://paranoidandroid.co/"><strong>Paranoid Android</strong></a>，版本为Android 13。</p>
+<p>本次刷入为：<a target="_blank" rel="noopener" href="https://pixelos.net/">PixelOS </a> 最新版（截止2025.10.15）</p>
 <span id="more"></span>
 
 <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a><strong>准备工作</strong></h2><h3 id="须知"><a href="#须知" class="headerlink" title="须知"></a>须知</h3><div class="note warning"><p>默认手机已经解锁BL <br> 大部分链接直连访问较慢，或无法访问 <br>刷机有风险！建议不要半夜或饭前进行刷机！<br>本流程会清空手机内的所有数据！</p></div>
@@ -2715,7 +2715,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <h3 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h3><ol>
 <li><p>ADB工具：<a target="_blank" rel="noopener" href="https://dl.google.com/android/repository/platform-tools-latest-windows.zip">链接</a></p>
 <ul>
-<li>将文件下载下来，解压缩到自定义的安装目录</li>
+<li><p>将文件下载下来，解压缩到自定义的安装目录</p>
+<br></li>
 </ul>
 </li>
 <li><p>配置环境变量：</p>
@@ -2737,9 +2738,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <ol start="3">
 <li><p>Rom包：<a target="_blank" rel="noopener" href="https://pixelos.net/download/alioth">https://pixelos.net/download/alioth</a></p>
 <ul>
-<li><p>这里选择最新版(Latest Build)下载 并下载 <code>Recovery</code> 下的文件<img src="https://cos.blanktime.cn/assets/images/rom.png" class="lazyload" data-srcset="https://cos.blanktime.cn/assets/images/rom.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<li><p>这里选择最新版(Latest Build)下载 并下载 <code>Recovery</code> 下的文件</p>
+<p><br><div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://cos.blanktime.cn/assets/images/rom.png" class="lazyload" data-srcset="https://cos.blanktime.cn/assets/images/rom.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="下载部分" style="width:400px;"/></div><span class="image-caption">下载部分</span></div></p>
 </li>
-<li><p>例如目前最新版本为 <code>PixelOS_alioth-15.0-20250625-0247.zip</code> 那么下载 <code>Recovery</code> 镜像文件时选择对应版本<img src="https://cos.blanktime.cn/assets/images/img.png" class="lazyload" data-srcset="https://cos.blanktime.cn/assets/images/img.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<li><p>例如目前最新版本为 <code>PixelOS_alioth-15.0-20250625-0247.zip</code> 那么下载 <code>Recovery</code> 镜像文件时选择对应版本</p>
+<br>
+
+<p><img src="https://cos.blanktime.cn/assets/images/img.png" class="lazyload" data-srcset="https://cos.blanktime.cn/assets/images/img.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<br>
 </li>
 <li><p>下载完毕会得到：</p>
 <p><img src="https://cos.blanktime.cn/assets/images/rom-img.png" class="lazyload" data-srcset="https://cos.blanktime.cn/assets/images/rom-img.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
@@ -2752,8 +2758,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <ul>
 <li><p>进入 <code>设置</code> -&gt; <code>关于手机</code> -&gt; 连续点击 <code>版本号</code> 数次，直到提示 <code>您已处于开发者模式</code> 。</p>
 </li>
-<li><p>接下来进入<code>开发者模式</code>开启 <code>USB调试</code> ，连接电脑时，手机屏幕上可能会弹出 <code>允许USB调试吗？</code> 的授权框，勾选 <code>始终允许</code> 并确认。</p>
-</li>
+<li><p>接下来进入 <code>开发者模式</code> 开启 <code>USB调试</code> ，连接电脑时，手机屏幕上可能会弹出 <code>允许USB调试吗？</code> 的授权框，勾选 <code>始终允许</code> 并确认。</p>
+<br></li>
 </ul>
 </li>
 <li><p>将手机重启至 <code>Fastboot</code> 模式</p>
@@ -2765,25 +2771,35 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">fastboot flash vendor_boot &lt;vendor boot.img文件路径&gt;</span><br><span class="line">fastboot flash boot &lt;boot.img文件路径&gt;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>重启至 <code>Recovery</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fastboot reboot recovery</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fastboot reboot recovery</span><br></pre></td></tr></table></figure>
+
+<br></li>
 </ul>
 <p>三条命令总览</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\nameless&gt;fastboot flash vendor_boot D:\redmik40\PixelOS\vendor_boot-alioth_20250625_0247.img</span><br><span class="line">Sending &#x27;vendor_boot&#x27; (98304 KB)                   OKAY [  2.267s]</span><br><span class="line">Writing &#x27;vendor_boot&#x27;                              OKAY [  0.143s]</span><br><span class="line">Finished. Total time: 2.439s</span><br><span class="line"></span><br><span class="line">C:\Users\nameless&gt;fastboot flash boot D:\redmik40\PixelOS\boot-alioth_20250625_0247.img</span><br><span class="line">Sending &#x27;boot_a&#x27; (196608 KB)                       OKAY [  4.523s]</span><br><span class="line">Writing &#x27;boot_a&#x27;                                   OKAY [  0.320s]</span><br><span class="line">Finished. Total time: 4.877s</span><br><span class="line"></span><br><span class="line">C:\Users\nameless&gt;fastboot reboot recovery</span><br><span class="line">Rebooting into recovery                            OKAY [  0.002s]</span><br><span class="line">Finished. Total time: 0.004s</span><br></pre></td></tr></table></figure>
+
+<br>
 </li>
 <li><p>在手机Recovery界面中依次选择(会清空手机内的所有数据)</p>
 <p><code>Fcatory reset</code> &gt; <code>Format data/factory reset</code> 完毕后返回主菜单</p>
+<br>
 </li>
 <li><p>重启Recovery</p>
 <p><code>Advanced</code> &gt; <code>Reboot to recovery</code></p>
+<br>
 </li>
 <li><p>在Recovery界面中选择</p>
 <p><code>Apply update</code> &gt; <code>Apply from ADB</code></p>
+<br>
 </li>
 <li><p>PC执行</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb sideload &lt;rom.zip文件路径&gt;</span><br></pre></td></tr></table></figure>
+
+<br>
 </li>
 <li><p>可能会遇到提示 <code>......Do you want to reboot to recovery new?</code></p>
 <p>选择 <code>No</code> 即可</p>
+<br>
 </li>
 <li><p>开机</p>
 </li>
@@ -2813,9 +2829,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </ol>
 <h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>刷入模块：<a target="_blank" rel="noopener" href="https://github.com/LSPosed/LSPosed.github.io/releases">Shamiko</a></p>
 <ol>
-<li>下载至手机</li>
-<li>右下角 <code>模块</code> &gt; <code>从本地安装</code> &gt; 选择下载的 <code>Shamiko</code></li>
-<li>后续重启出现笑脸即可。</li>
+<li><p>下载至手机</p>
+</li>
+<li><p>右下角 <code>模块</code> &gt; <code>从本地安装</code> &gt; 选择下载的 <code>Shamiko</code></p>
+</li>
+<li><p>后续重启出现笑脸即可。</p>
+</li>
 </ol>
 <p><img src="https://cos.blanktime.cn/assets/images/shamiko.png" class="lazyload" data-srcset="https://cos.blanktime.cn/assets/images/shamiko.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
 <h2 id="LSPosed-部分"><a href="#LSPosed-部分" class="headerlink" title="LSPosed 部分"></a><strong>LSPosed 部分</strong></h2><h3 id="准备-1"><a href="#准备-1" class="headerlink" title="准备"></a>准备</h3><p>下载 <a target="_blank" rel="noopener" href="https://lsposed.cn/lsposed-down/LSPosed-v1.10.1-7115-zygisk-release.zip">LSPosed v1.10.1 zygisk</a> 至手机</p>
@@ -2861,10 +2880,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2026-02-04T13:58:39+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2026-02-05T18:24:19+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2026年2月4日 13:58</p>
+    <p>更新于：2026年2月5日 18:24</p>
   </a>
 </div>
 
@@ -2891,7 +2910,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
           target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.blanktime.cn/2025/10/15/Redmi-k40/&title=Redmi k40(alioth)刷入 Pixel OS - 空白时间&summary=本人手中的 Redmi k40 已吃灰良久，目前系统为 Paranoid Android，版本为Android 13。
-本次刷入为：PixelOS最新版（截止2025.10.15）"
+本次刷入为：PixelOS  最新版（截止2025.10.15）"
           
           >
           
@@ -2904,7 +2923,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
           target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blog.blanktime.cn/2025/10/15/Redmi-k40/&title=Redmi k40(alioth)刷入 Pixel OS - 空白时间&summary=本人手中的 Redmi k40 已吃灰良久，目前系统为 Paranoid Android，版本为Android 13。
-本次刷入为：PixelOS最新版（截止2025.10.15）"
+本次刷入为：PixelOS  最新版（截止2025.10.15）"
           
           >
           
@@ -2917,7 +2936,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
           target="_blank" href="http://service.weibo.com/share/share.php?url=https://blog.blanktime.cn/2025/10/15/Redmi-k40/&title=Redmi k40(alioth)刷入 Pixel OS - 空白时间&summary=本人手中的 Redmi k40 已吃灰良久，目前系统为 Paranoid Android，版本为Android 13。
-本次刷入为：PixelOS最新版（截止2025.10.15）"
+本次刷入为：PixelOS  最新版（截止2025.10.15）"
           
           >
           
@@ -4156,7 +4175,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"空白时间","url":"https://blog.blanktime.cn/","logo":{"@type":"ImageObject","url":"/images/logo/logo-500x500.png","width":500,"height":500}},{"@context":"https://schema.org.cn","@type":"Person","name":"η","image":{"@type":"ImageObject","url":"/images/logo/logo-500x500.png"},"url":"https://blog.blanktime.cn/","sameAs":["https://github.com/fhyx06"],"description":"好记性不如烂笔头，站内多用于记录一些心得、思考、分享、经验等。"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.blanktime.cn/","name":"空白时间"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.blanktime.cn/categories/记录/","name":"记录"}},{"@type":"ListItem","position":3,"item":{"@id":"https://blog.blanktime.cn/2025/10/15/Redmi-k40/","name":"Redmi k40(alioth)刷入 Pixel OS"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"空白时间","url":"https://blog.blanktime.cn/","keywords":["空白时间","静默沉淀，向内而生","blanktime"],"description":"好记性不如烂笔头，站内多用于记录一些心得、思考、分享、经验等。","author":{"@type":"Person","name":"η","image":{"@type":"ImageObject","url":"/images/logo/logo-500x500.png"},"url":"https://blog.blanktime.cn/","description":"好记性不如烂笔头，站内多用于记录一些心得、思考、分享、经验等。"},"publisher":{"@type":"Organization","name":"空白时间","url":"https://blog.blanktime.cn/","logo":{"@type":"ImageObject","url":"/images/logo/logo-500x500.png","width":500,"height":500}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.blanktime.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"Redmi k40(alioth)刷入 Pixel OS","description":"本人手中的 Redmi k40 已吃灰良久，目前系统为 Paranoid Android，版本为Android 13。\n本次刷入为：PixelOS最新版（截止2025.10.15）","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.blanktime.cn/2025/10/15/Redmi-k40/"},"author":{"@type":"Person","name":"η","image":{"@type":"ImageObject","url":"/images/logo/logo-500x500.png"},"url":"https://blog.blanktime.cn/"},"publisher":{"@type":"Organization","name":"空白时间","logo":{"@type":"ImageObject","url":"/images/logo/logo-500x500.png","width":500,"height":500}},"url":"https://blog.blanktime.cn/2025/10/15/Redmi-k40/","wordCount":90,"datePublished":"2025-10-15T12:12:27.000Z","dateModified":"2026-02-04T05:58:39.572Z","articleSection":"记录","keywords":"刷机","image":{"@type":"ImageObject","url":"https://cos.blanktime.cn/assets/images/pixelOS.png","width":1024,"height":768}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"空白时间","url":"https://blog.blanktime.cn/","logo":{"@type":"ImageObject","url":"/images/logo/logo-500x500.png","width":500,"height":500}},{"@context":"https://schema.org.cn","@type":"Person","name":"η","image":{"@type":"ImageObject","url":"/images/logo/logo-500x500.png"},"url":"https://blog.blanktime.cn/","sameAs":["https://github.com/fhyx06"],"description":"好记性不如烂笔头，站内多用于记录一些心得、思考、分享、经验等。"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.blanktime.cn/","name":"空白时间"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.blanktime.cn/categories/记录/","name":"记录"}},{"@type":"ListItem","position":3,"item":{"@id":"https://blog.blanktime.cn/2025/10/15/Redmi-k40/","name":"Redmi k40(alioth)刷入 Pixel OS"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"空白时间","url":"https://blog.blanktime.cn/","keywords":["空白时间","静默沉淀，向内而生","blanktime"],"description":"好记性不如烂笔头，站内多用于记录一些心得、思考、分享、经验等。","author":{"@type":"Person","name":"η","image":{"@type":"ImageObject","url":"/images/logo/logo-500x500.png"},"url":"https://blog.blanktime.cn/","description":"好记性不如烂笔头，站内多用于记录一些心得、思考、分享、经验等。"},"publisher":{"@type":"Organization","name":"空白时间","url":"https://blog.blanktime.cn/","logo":{"@type":"ImageObject","url":"/images/logo/logo-500x500.png","width":500,"height":500}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.blanktime.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"Redmi k40(alioth)刷入 Pixel OS","description":"本人手中的 Redmi k40 已吃灰良久，目前系统为 Paranoid Android，版本为Android 13。\n本次刷入为：PixelOS  最新版（截止2025.10.15）","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.blanktime.cn/2025/10/15/Redmi-k40/"},"author":{"@type":"Person","name":"η","image":{"@type":"ImageObject","url":"/images/logo/logo-500x500.png"},"url":"https://blog.blanktime.cn/"},"publisher":{"@type":"Organization","name":"空白时间","logo":{"@type":"ImageObject","url":"/images/logo/logo-500x500.png","width":500,"height":500}},"url":"https://blog.blanktime.cn/2025/10/15/Redmi-k40/","wordCount":92,"datePublished":"2025-10-15T12:12:27.000Z","dateModified":"2026-02-05T10:24:19.628Z","articleSection":"记录","keywords":"刷机","image":{"@type":"ImageObject","url":"https://cos.blanktime.cn/assets/images/pixelOS.png","width":1024,"height":768}}]</script>
 
 
 
