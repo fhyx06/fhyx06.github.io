@@ -8,9 +8,9 @@
   --color-site-footer: #666;
   --color-card: #fff;
   --color-text: #444;
-  --color-block: rgba(66,165,245,0.15);
+  --color-block: rgba(100,149,237,0.08);
   --color-inlinecode: #d63384;
-  --color-codeblock: rgba(66,165,245,0.35);
+  --color-codeblock: rgba(100,149,237,0.2);
   --color-h1: #3a3a3a;
   --color-h2: #3a3a3a;
   --color-h3: #333;
@@ -19,7 +19,7 @@
   --color-h6: #666;
   --color-p: #444;
   --color-list: #666;
-  --color-list-hl: #3484c4;
+  --color-list-hl: #5077bd;
   --color-meta: #888;
   --color-read-bkg: #e0d8c8;
   --color-read-post: #f8f1e2;
@@ -42,7 +42,7 @@
   background: transparent;
 }
 *::-webkit-scrollbar-thumb {
-  background: #42a5f5;
+  background: #6495ed;
   cursor: pointer;
   border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -65,7 +65,7 @@ html >::-webkit-scrollbar-track-piece {
   background: transparent;
 }
 html >::-webkit-scrollbar-thumb {
-  background: #42a5f5;
+  background: #6495ed;
   cursor: pointer;
   border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -685,8 +685,8 @@ button {
     --color-site-footer: rgba(170,170,170,0.871);
     --color-card: #262626;
     --color-text: rgba(238,238,238,0.871);
-    --color-block: rgba(100,181,246,0.15);
-    --color-codeblock: rgba(100,181,246,0.35);
+    --color-block: rgba(100,149,237,0.15);
+    --color-codeblock: rgba(100,149,237,0.28);
     --color-inlinecode: #ff79c6;
     --color-h1: rgba(255,255,255,0.871);
     --color-h2: rgba(255,255,255,0.871);
@@ -696,7 +696,7 @@ button {
     --color-h6: rgba(255,255,255,0.6);
     --color-p: rgba(217,217,217,0.871);
     --color-list: rgba(217,217,217,0.871);
-    --color-list-hl: #67b7f7;
+    --color-list-hl: #83aaf0;
     --color-meta: rgba(191,191,191,0.871);
     --color-link: rgba(191,191,191,0.871);
     --color-copyright-bkg: #21252b;
@@ -758,8 +758,8 @@ button {
   --color-site-footer: rgba(170,170,170,0.871);
   --color-card: #262626;
   --color-text: rgba(238,238,238,0.871);
-  --color-block: rgba(100,181,246,0.15);
-  --color-codeblock: rgba(100,181,246,0.35);
+  --color-block: rgba(100,149,237,0.15);
+  --color-codeblock: rgba(100,149,237,0.28);
   --color-inlinecode: #ff79c6;
   --color-h1: rgba(255,255,255,0.871);
   --color-h2: rgba(255,255,255,0.871);
@@ -769,7 +769,7 @@ button {
   --color-h6: rgba(255,255,255,0.6);
   --color-p: rgba(217,217,217,0.871);
   --color-list: rgba(217,217,217,0.871);
-  --color-list-hl: #67b7f7;
+  --color-list-hl: #83aaf0;
   --color-meta: rgba(191,191,191,0.871);
   --color-link: rgba(191,191,191,0.871);
   --color-copyright-bkg: #21252b;
@@ -1042,7 +1042,7 @@ button {
   -moz-transition: all 0.28s ease;
   -o-transition: all 0.28s ease;
   -ms-transition: all 0.28s ease;
-  color: #42a5f5;
+  color: #6495ed;
 }
 .l_header .switcher >li >a:hover {
   border: none;
@@ -1222,7 +1222,7 @@ ul.m-pc >li>a {
 }
 ul.m-pc >li>a:active,
 ul.m-pc >li>a.active {
-  border-bottom: 2px solid #42a5f5;
+  border-bottom: 2px solid #6495ed;
 }
 ul.m-pc li:hover >ul.list-v,
 ul.list-v li:hover >ul.list-v {
@@ -1361,7 +1361,7 @@ ul.list-v >li>a:hover {
 }
 .l_header ul.nav-list-h>li >a:active,
 .l_header ul.nav-list-h>li >a.active {
-  color: #42a5f5;
+  color: #6495ed;
 }
 .l_header ul.nav-list-h>li:hover>a {
   color: var(--color-list-hl);
